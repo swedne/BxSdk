@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:fitsSystemWindows="true"
+    android:background="@color/white" >
+
+    <include
+        android:id="@+id/include1"
+        layout="@layout/title_base" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="270dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/include1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/aboutimg" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageView1"
+        android:layout_alignRight="@+id/imageView1"
+        android:layout_below="@+id/imageView1"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="网址： www.xmfczc.com"
+            android:textColor="@color/info_text_color" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="电话：0592-2012580"
+            android:textColor="@color/info_text_color" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="地址：厦门市思明区厦禾路659号四层(君临宝邸)"
+            android:textColor="@color/info_text_color" />
+    </LinearLayout>
+
+</RelativeLayout>

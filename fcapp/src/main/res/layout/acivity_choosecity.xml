@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/home_bg"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/titlebar"
+        layout="@layout/title_base" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ListView
+            android:id="@+id/lv_allcity"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:divider="@color/line_gray"
+            android:dividerHeight="0px"
+            android:scrollbars="none" >
+        </ListView>
+
+        <com.zorasun.fangchanzhichuang.general.widget.LetterView
+            android:id="@+id/letterView1"
+            android:layout_width="36dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="60dp"
+            app:letterColror="#FF000000"
+            app:letterSizes="10sp"
+            app:locSize="15sp"
+            app:pushSizes="15sp" />
+    </LinearLayout>
+
+</LinearLayout>

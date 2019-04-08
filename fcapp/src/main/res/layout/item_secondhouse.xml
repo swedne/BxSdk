@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <RelativeLayout
+        android:id="@+id/rl_secondhandhouse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/list_item_selector"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="86dp"
+            android:layout_height="86dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="5dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/wutu" />
+
+        <TextView
+            android:id="@+id/tv_collect_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/imageView1"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="厦门房产之窗厦门房产之窗厦门房产之窗厦门房产之窗厦门房产之窗厦门房产之窗厦门房产之窗厦门房产之窗厦门房产之窗厦门房产之窗"
+            android:textColor="@color/info_text_color" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_collect_title"
+            android:layout_centerVertical="true" >
+
+            <TextView
+                android:id="@+id/tv_collect_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="罗宾森广场"
+                android:textColor="@color/text_color" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_collect_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="500"
+                    android:textColor="@color/text_red"
+                    android:textSize="@dimen/txt_size_16sp" />
+
+                <TextView
+                    android:id="@+id/text_wan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="万"
+                    android:textColor="@color/text_red"
+                    android:textSize="@dimen/txt_size_12sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageView1"
+            android:layout_alignLeft="@+id/linearLayout1" >
+
+            <TextView
+                android:id="@+id/tv_area"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="bottom"
+                android:text="90平米"
+                android:textColor="@color/info_text_color" />
+
+            <TextView
+                android:id="@+id/tv_price1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:gravity="bottom"
+                android:text=""
+                android:textColor="@color/txt_gray" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/img_renzheng1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/imageView1"
+            android:layout_alignTop="@+id/imageView1"
+            android:src="@drawable/renzheng"
+            android:visibility="invisible" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="86dp"
+            android:layout_marginLeft="5dp"
+            android:gravity="right" >
+
+            <ImageView
+                android:id="@+id/img_renzheng_web_noprice"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="70dp"
+                android:src="@drawable/weborwx_rzfy"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/img_weirenzheng_web_noprice"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="70dp"
+                android:visibility="gone"
+                android:src="@drawable/weborwx_wrzfy" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_secondhandhouse02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_secondhandhouse"
+        android:background="@drawable/list_item_selector"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:id="@+id/tv_collect_title01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignTop="@+id/img_newhousepic"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/img_newhousepic"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="阳光城菲丽湾阳光城菲丽湾阳光城菲丽湾阳光城菲丽湾"
+            android:textColor="@color/info_text_color"
+            android:textSize="14dp" />
+
+        <LinearLayout
+            android:id="@+id/ll_secondHouseSpecialist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/rl_middle"
+            android:layout_below="@+id/tv_price"
+            android:layout_marginTop="7dp"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_middle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_collect_title01"
+            android:layout_below="@+id/tv_collect_title01"
+            android:layout_marginTop="7dp"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/tv_room_hall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="两室一厅"
+                android:textColor="@color/info_text_color"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_berryGG"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="12dp"
+                android:layout_toRightOf="@+id/tv_room_hall"
+                android:text="100m²"
+                android:textColor="@color/info_text_color"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="@+id/tv_berryGG"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_saleprice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:layout_toLeftOf="@+id/tv_wan"
+                    android:text="500"
+                    android:textColor="@color/text_red"
+                    android:textSize="@dimen/txt_size_16sp" />
+
+                <TextView
+                    android:id="@+id/tv_wan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/tv_saleprice"
+                    android:layout_alignParentRight="true"
+                    android:text="万"
+                    android:textColor="@color/text_red"
+                    android:textSize="@dimen/txt_size_12sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/img_newhousepic"
+            android:layout_width="86dp"
+            android:layout_height="86dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/wutu" />
+
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/tv_collect_arealistname"
+            android:layout_marginRight="10dp"
+            android:text="35600元/平"
+            android:textColor="@color/txt_gray"
+            android:textSize="@dimen/txt_size_12sp" />
+
+        <TextView
+            android:id="@+id/tv_collect_arealistname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/rl_middle"
+            android:layout_below="@+id/rl_middle"
+            android:layout_marginTop="4dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="罗宾森广场"
+            android:textColor="@color/txt_gray"
+            android:textSize="10sp" />
+
+        <ImageView
+            android:id="@+id/img_isAuth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/img_newhousepic"
+            android:layout_alignTop="@+id/img_newhousepic"
+            android:src="@drawable/renzheng"
+            android:visibility="invisible" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="5dp"
+            android:gravity="center_vertical" >
+
+            <ImageView
+                android:id="@+id/img_renzheng_web"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="70dp"
+                android:src="@drawable/weborwx_rzfy"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/img_weirenzheng_web"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="70dp"
+                android:visibility="gone"
+                android:src="@drawable/weborwx_wrzfy" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

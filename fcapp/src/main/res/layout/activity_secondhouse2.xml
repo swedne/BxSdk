@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/home_bg"
+    android:fitsSystemWindows="true" >
+
+    <include
+        android:id="@+id/titleBar"
+        layout="@layout/title_base" />
+
+    <LinearLayout
+        android:id="@+id/ll_bar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/titleBar"
+        android:background="@color/white"
+        android:gravity="center" >
+
+        <LinearLayout
+            android:id="@+id/ll_secondhouse"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_secondhouse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="住宅"
+                android:textColor="@color/title_bg"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/line"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="6dp"
+            android:background="@color/line" />
+
+        <LinearLayout
+            android:id="@+id/ll_shangpu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_shangpu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="商铺"
+                android:textColor="@color/txt_gray"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/line"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="6dp"
+            android:background="@color/line" />
+
+        <LinearLayout
+            android:id="@+id/ll_xiezilou"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_xiezilou"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="写字楼"
+                android:textColor="@color/txt_gray"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/line"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="6dp"
+            android:background="@color/line" />
+
+        <LinearLayout
+            android:id="@+id/ll_changfang"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_changfang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="厂房"
+                android:textColor="@color/txt_gray"
+                android:textSize="16dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.zorasun.fangchanzhichuang.general.util.ViewPagerTab
+        android:id="@+id/viewpg_house_tab"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/ll_bar" />
+
+    <View
+        android:id="@+id/view_tab_line"
+        style="@style/line"
+        android:layout_below="@+id/viewpg_house_tab" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager_house"
+        style="@style/theme_match"
+        android:layout_below="@+id/view_tab_line"
+        android:layout_gravity="center" />
+
+</RelativeLayout>

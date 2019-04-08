@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/home_bg"
+    android:fitsSystemWindows="true" >
+
+    <include
+        android:id="@+id/titleBar"
+        layout="@layout/title_base02" />
+
+    <LinearLayout
+        android:id="@+id/ll_bar"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@+id/titleBar"
+        android:background="@color/white"
+        android:gravity="center" >
+
+        <RelativeLayout
+            android:id="@+id/rl_quyu"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/tv_quyu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="8dp"
+                android:drawableRight="@drawable/sanjiao_n"
+                android:ellipsize="end"
+                android:padding="6dp"
+                android:singleLine="true"
+                android:text="区域"
+                android:textColor="@color/txt_gray"
+                android:textSize="@dimen/txt_size_16sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="@dimen/line"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="6dp"
+            android:background="@color/line" />
+
+        <RelativeLayout
+            android:id="@+id/rl_leixing"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/tv_leixing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="8dp"
+                android:drawableRight="@drawable/sanjiao_n"
+                android:ellipsize="end"
+                android:padding="6dp"
+                android:singleLine="true"
+                android:text="类型"
+                android:textColor="@color/txt_gray"
+                android:textSize="@dimen/txt_size_16sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="@dimen/line"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="6dp"
+            android:background="@color/line" />
+
+        <RelativeLayout
+            android:id="@+id/rl_paixu"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/tv_paixu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="8dp"
+                android:drawableRight="@drawable/sanjiao_n"
+                android:ellipsize="end"
+                android:padding="6dp"
+                android:singleLine="true"
+                android:text="排序"
+                android:textColor="@color/txt_gray"
+                android:textSize="@dimen/txt_size_16sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/topline"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line"
+        android:layout_below="@+id/ll_bar"
+        android:background="@color/line" />
+
+    <com.zorasun.fangchanzhichuang.general.widget.pulltorefresh.PullToRefreshListView
+        android:id="@+id/ptr_listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tv_tudigong"
+        android:layout_below="@+id/topline"
+        android:divider="#00000000"
+        android:listSelector="#00000000" >
+    </com.zorasun.fangchanzhichuang.general.widget.pulltorefresh.PullToRefreshListView>
+
+    <include
+        android:id="@+id/data_error"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tv_tudigong"
+        android:layout_below="@+id/ll_bar"
+        android:layout_centerHorizontal="true"
+        layout="@layout/include_customview" />
+
+    <include
+        android:id="@+id/search_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tv_tudigong"
+        android:layout_below="@+id/topline"
+        layout="@layout/item_searchempty"
+        android:visibility="gone" />
+
+    <com.zorasun.fangchanzhichuang.general.widget.CustomView
+        android:id="@+id/customview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tv_tudigong"
+        android:layout_below="@+id/topline"
+        android:visibility="gone" >
+    </com.zorasun.fangchanzhichuang.general.widget.CustomView>
+
+    <TextView
+        android:id="@+id/tv_tudigong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/title_bg"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="周边的土地公"
+        android:textColor="@color/white"
+        android:textSize="@dimen/txt_size_16sp" />
+
+</RelativeLayout>

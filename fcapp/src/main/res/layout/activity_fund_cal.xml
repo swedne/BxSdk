@@ -1,0 +1,43 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray"
+     android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_base" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:descendantFocusability="blocksDescendants"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <include layout="@layout/include_fund_base" />
+
+            <View style="@style/line_thick" />
+
+            <!-- <include layout="@layout/include_fund_balance" /> -->
+
+
+            <!-- <View style="@style/line_thick" /> -->
+
+            <include layout="@layout/include_fund_year" />
+
+            <View style="@style/line_thicker" />
+        </LinearLayout>
+    </ScrollView>
+
+    <View style="@style/line" />
+
+    <include layout="@layout/include_fund_cal" />
+
+    
+
+</LinearLayout>

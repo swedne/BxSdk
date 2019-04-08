@@ -1,0 +1,109 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+     android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_base" />
+
+    <!-- <ScrollView -->
+    <!-- android:id="@+id/scrollView1" -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="wrap_content" > -->
+
+
+    <!-- <LinearLayout -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:orientation="vertical" > -->
+
+
+    <!-- <TextView -->
+    <!-- android:id="@+id/tv_title" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:padding="12dp" -->
+    <!-- android:textColor="@color/info_text_color" -->
+
+
+    <!-- android:textSize="@dimen/txt_size_20sp" /> -->
+
+
+    <!-- <View -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="@dimen/line" -->
+    <!-- android:layout_marginLeft="12dp" -->
+    <!-- android:layout_marginRight="12dp" -->
+    <!-- android:background="@color/line" /> -->
+
+
+    <!-- <ImageView -->
+    <!-- android:id="@+id/img_gonggao" -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="match_parent" -->
+    <!-- android:layout_marginLeft="12dp" -->
+    <!-- android:layout_marginRight="12dp" -->
+    <!-- android:layout_marginTop="12dp" -->
+    <!-- android:scaleType="fitXY" -->
+    <!-- android:src="@drawable/lunbo_noresult" /> -->
+
+
+    <!-- <TextView -->
+    <!-- android:id="@+id/tv_content" -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_marginLeft="12dp" -->
+    <!-- android:layout_marginRight="12dp" -->
+    <!-- android:textColor="@color/info_text_color" -->
+    <!-- android:textSize="@dimen/txt_size_14sp" /> -->
+
+
+    <!-- <RelativeLayout -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_marginTop="6dp" -->
+    <!-- android:paddingRight="12dp" > -->
+
+
+    <!-- <TextView -->
+    <!-- android:id="@+id/textView0" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_alignParentRight="true" -->
+    <!-- android:text="厦门房产之窗" -->
+    <!-- android:textColor="@color/info_text_color" -->
+    <!-- android:textSize="@dimen/txt_size_14sp" /> -->
+
+
+    <!-- <TextView -->
+    <!-- android:id="@+id/tv_time" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_alignParentRight="true" -->
+    <!-- android:layout_below="@+id/textView0" -->
+    <!-- android:textColor="@color/info_text_color" -->
+    <!-- android:textSize="@dimen/txt_size_14sp" /> -->
+    <!-- </RelativeLayout> -->
+    <!-- </LinearLayout> -->
+    <!-- </ScrollView> -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <WebView
+            android:id="@+id/web_notice"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <include
+            android:id="@+id/data_error"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            layout="@layout/include_customview" />
+    </RelativeLayout>
+
+</LinearLayout>

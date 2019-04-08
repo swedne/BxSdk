@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/home_bg"
+     android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/titlebar"
+        layout="@layout/title_base" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.zorasun.fangchanzhichuang.general.widget.pulltorefresh.PullToRefreshListView
+            android:id="@+id/ptr_listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="#00000000"
+            android:listSelector="#00000000" >
+        </com.zorasun.fangchanzhichuang.general.widget.pulltorefresh.PullToRefreshListView>
+
+        <include
+            android:id="@+id/data_error"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            layout="@layout/include_customview" />
+    </RelativeLayout>
+
+</LinearLayout>

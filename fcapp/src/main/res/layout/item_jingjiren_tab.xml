@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line"
+        android:background="@color/line_gray" />
+
+    <LinearLayout
+      android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/ll_popleft"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ListView
+                android:id="@+id/poplist1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:divider="@color/line"
+                android:dividerHeight="@dimen/line"
+                android:scrollbars="none" >
+            </ListView>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/line0"
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/line" />
+
+        <!-- <LinearLayout -->
+        <!-- android:id="@+id/ll_pop" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_weight="1" -->
+        <!-- android:orientation="horizontal" > -->
+
+        <LinearLayout
+            android:id="@+id/ll_popmiddle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <ListView
+                android:id="@+id/poplist2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:divider="@color/line"
+                android:dividerHeight="@dimen/line"
+                android:scrollbars="none" >
+            </ListView>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/line1"
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/line" />
+
+        <LinearLayout
+            android:id="@+id/ll_popright"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <ListView
+                android:id="@+id/poplist3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:divider="@color/line"
+                android:dividerHeight="@dimen/line"
+                android:scrollbars="vertical" >
+            </ListView>
+        </LinearLayout>
+    </LinearLayout>
+    <!-- </LinearLayout> -->
+
+    <TextView
+        android:id="@+id/tv_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#c0c0c0c0" />
+
+</LinearLayout>

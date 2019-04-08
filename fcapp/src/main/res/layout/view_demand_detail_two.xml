@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll_broker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp" >
+
+        <ImageView
+            android:id="@+id/img_demandDetail_broker"
+            android:layout_width="94dp"
+            android:layout_height="120dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/wutu"
+            android:scaleType="fitXY" />
+
+        <LinearLayout
+            android:layout_width="167dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:orientation="vertical"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp" >
+
+            <TextView
+                android:id="@+id/tv_view_demand_detail_name"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:paddingLeft="5dp"
+                android:text="1111"
+                android:textColor="@color/info_text_color" />
+
+            <TextView
+                android:id="@+id/tv_view_demand_detail_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_below="@+id/tv_view_demand_detail_name"
+                android:layout_weight="1"
+                android:paddingLeft="5dp"
+                android:text="112214"
+                android:textColor="@color/info_text_color" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_below="@+id/tv_view_demand_detail_phone"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_view_demand_detail_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignTop="@+id/tv_view_demand_detail_company"
+                    android:text="嵩屿"
+                    android:textColor="@color/text_color" />
+
+                <TextView
+                    android:id="@+id/line"
+                    android:layout_width="1dp"
+                    android:layout_height="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/gray" />
+
+                <TextView
+                    android:id="@+id/tv_view_demand_detail_leavel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tv_view_demand_detail_address"
+                    android:layout_alignBottom="@+id/tv_view_demand_detail_address"
+                    android:layout_toRightOf="@+id/tv_view_demand_detail_phone"
+                    android:text="社区专家"
+                    android:textColor="@color/text_color" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_view_demand_detail_company"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/linearLayout1"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_view_demand_detail_company01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:paddingLeft="5dp"
+                    android:textColor="@color/text_color" />
+
+                <TextView
+                    android:id="@+id/tv_view_demand_detail_company"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:textColor="@color/text_color" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_view_demand_detail_community"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/ll_view_demand_detail_company"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:paddingLeft="5dp"
+                android:paddingRight="6dp"
+                android:singleLine="true"
+                android:textColor="@color/text_color" />
+
+            <TextView
+                android:id="@+id/tv_attact"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_alignBaseline="@+id/tv_view_demand_detail_name"
+                android:layout_alignBottom="@+id/tv_view_demand_detail_name"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@color/title_bg"
+                android:text="已关注"
+                android:textColor="@color/white"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/right_arrow" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/item_myhouseres"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/tv_myhouseres"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:drawableRight="@drawable/right_arrow"
+            android:gravity="center_vertical"
+            android:text="我的房源信息"
+            android:textColor="@color/txt_black_deep" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/gray" />
+
+        <com.zorasun.fangchanzhichuang.general.widget.NoScrollListView
+            android:id="@+id/lv_view_demand_detail_myhouse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:divider="@color/line"
+            android:dividerHeight="@dimen/line" >
+        </com.zorasun.fangchanzhichuang.general.widget.NoScrollListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_kanfang_record"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text="看房记录"
+            android:textColor="@color/txt_black_deep" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@color/gray" />
+
+        <com.zorasun.fangchanzhichuang.general.widget.NoScrollListView
+            android:id="@+id/lv_view_demand_detail_lookrecode"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:divider="@color/line"
+            android:dividerHeight="@dimen/line" >
+        </com.zorasun.fangchanzhichuang.general.widget.NoScrollListView>
+    </LinearLayout>
+
+</LinearLayout>

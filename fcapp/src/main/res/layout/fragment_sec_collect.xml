@@ -1,0 +1,22 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zorasun.fangchanzhichuang.section.my.SecCollectFragment" >
+
+    <ListView
+        android:id="@+id/xlv_mycollection"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/line"
+        android:dividerHeight="@dimen/line" >
+    </ListView>
+
+    <include
+        android:id="@+id/data_error"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        layout="@layout/include_customview" />
+
+</RelativeLayout>

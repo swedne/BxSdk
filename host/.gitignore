@@ -10,3 +10,7 @@ local.properties
 /build
 /captures
 .externalNativeBuild
+
+/src/bxvipqa
+/src/demoapp1
+/src/majiassc

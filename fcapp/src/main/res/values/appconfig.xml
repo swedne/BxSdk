@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 正式地址 -->
+    <string name="base_url">http://www.xmfczc.com</string>
+    <string name="image_url">http://img.xmfczc.com</string>
+    <string name="image_url_head">http://www.xmfczc.com:8070/xiamenfangchan-main</string>
+    <string name="base_url2">http://www.xmfczc.com:8070/xiamenfangchan-main</string>
+    <string name="image_url2">http://www.xmfczc.com:8070/xiamenfangchan-main</string>
+    <string name="updateUrl">http://img.xmfczc.com/</string>
+
+
+    <!-- 测试地址 -->
+
+
+<!--     <string name="base_url">http://27.154.56.186:8060/xiamenfangchan-interface</string> -->
+<!--     <string name="image_url">http://img.xmfczc.com</string> -->
+<!--     <string name="image_url_head">http://27.154.56.186:8060/xiamenfangchan-main/view/upload/upload-pic</string> -->
+<!--     <string name="updateUrl">http://27.154.56.186:8060/xiamenfangchan-main/</string> -->
+
+
+    <!-- 本地地址 -->
+    
+    
+<!--     <string name="base_url">http://192.168.1.43:8080/xiamenfangchan-interface</string> -->
+<!--     <string name="image_url">http://img.xmfczc.com</string> -->
+<!--     <string name="updateUrl">http://192.168.1.43:8070/xiamenfangchan-main/</string> -->
+<!--     <string name="image_url_head">http://www.xmfczc.com:8070/xiamenfangchan-main</string> -->
+   
+
+
+
+
+    <!-- Log文件配置，正式发布后需要修改 -->
+    <string name="log">true</string>
+    <!-- global exception -->
+    <string name="global_exception_action">com.zorasun.igene.general.utils.GlobalExceptionHanlder</string>
+    <string name="global_exception_sdcard_dir">/fcgz/log/</string>
+    <string name="global_exception_enable">true</string>
+    <!-- 图片路径 -->
+    <string name="igene_photo_sdcard">/fcgz/photo/</string>
+    <string name="image_dir">/tigofood/image/</string>
+
+</resources>

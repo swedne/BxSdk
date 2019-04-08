@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/lock_dilog_bg"
+    android:gravity="top"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/dialog_remind_title"
+        style="@style/text_style"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="温馨提示"
+        android:textColor="@color/title_bg" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#6FBAFF" />
+
+    <LinearLayout
+        style="@style/theme_w_match"
+        android:layout_marginTop="23dp"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/et_remind_property"
+            style="@style/text_style"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="11dp"
+            android:background="@drawable/border_black_corner"
+            android:hint="请输入产权证号"
+            android:inputType="textMultiLine"
+            android:maxLength="50"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/et_remind_idcard"
+            style="@style/text_style"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="11dp"
+            android:background="@drawable/border_black_corner"
+            android:digits="0123456789abcdefghigklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+            android:hint="请输入身份证号"
+            android:inputType="textMultiLine"
+            android:maxLength="18"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/rl_remind_auth"
+            style="@style/theme_w_match"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/tv_remind_a"
+                style="@style/text_style"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="产权证号" />
+
+            <TextView
+                android:id="@+id/tv_remind_b"
+                style="@style/text_style"
+                android:layout_below="@+id/tv_remind_a"
+                android:layout_marginTop="15dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="身份证号  " />
+
+            <TextView
+                android:id="@+id/tv_remind_property"
+                style="@style/text_style"
+                android:layout_alignBaseline="@+id/tv_remind_a"
+                android:layout_toRightOf="@+id/tv_remind_a"
+                android:maxLines="2" />
+
+            <TextView
+                android:id="@+id/tv_remind_idcard"
+                style="@style/text_style"
+                android:layout_alignBaseline="@+id/tv_remind_b"
+                android:layout_toRightOf="@+id/tv_remind_b"
+                android:maxLines="2" />
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/et_remind_remark"
+            style="@style/text_style"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/border_black_corner"
+            android:gravity="top|left"
+            android:inputType="textMultiLine"
+            android:lines="3"
+            android:maxLength="200"
+            android:padding="5dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/dialog_remind_dates"
+            style="@style/text_style"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="确定删除该图片"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/theme_w_match"
+        android:layout_marginTop="23dp"
+        android:baselineAligned="false"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/ll_dialog_cancel"
+            style="@style/theme_w_match"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingBottom="11dp" >
+
+            <TextView
+                android:id="@+id/dialog_remind_cancel"
+                style="@style/text_style"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="22dp"
+                android:layout_marginRight="22dp"
+                android:background="@drawable/btn_login_put"
+                android:gravity="center"
+                android:padding="6dp"
+                android:text="取消"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/theme_w_match"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingBottom="11dp" >
+
+            <TextView
+                android:id="@+id/dialog_remind_sure"
+                style="@style/text_style"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="22dp"
+                android:layout_marginRight="22dp"
+                android:background="@drawable/btn_login_put"
+                android:gravity="center"
+                android:padding="6dp"
+                android:text="确定"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,184 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray"
+    tools:context="com.zorasun.fangchanzhichuang.MyFragment" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bggerenzhognxin"
+                android:gravity="center" >
+
+                <LinearLayout
+                    android:id="@+id/ll_imageHead"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:paddingTop="20dp" >
+
+                    <com.zorasun.fangchanzhichuang.general.widget.CircleImageView
+                        android:id="@+id/img_avatar"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/touxiang" />
+
+                    <TextView
+                        android:id="@+id/tv_nickname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:gravity="center_horizontal"
+                        android:text="登录/注册"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/txt_size_14sp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <include layout="@layout/view_line" />
+
+                <TextView
+                    android:id="@+id/tv_my_demand"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:drawableLeft="@drawable/iconfont_kehuxuqiu"
+                    android:drawablePadding="10dp"
+                    android:drawableRight="@drawable/right_arrow"
+                    android:gravity="center_vertical"
+                    android:padding="3dp"
+                    android:text="@string/my_demand"
+                    android:textColor="@color/info_text_color" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/view_line_height"
+                    android:background="@color/line" />
+
+                <TextView
+                    android:id="@+id/tv_my_collect"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:drawableLeft="@drawable/iconfont_shoucang"
+                    android:drawablePadding="10dp"
+                    android:drawableRight="@drawable/right_arrow"
+                    android:gravity="center_vertical"
+                    android:padding="3dp"
+                    android:text="@string/my_collect"
+                    android:textColor="@color/info_text_color" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/view_line_height"
+                    android:background="@color/line" />
+
+                <TextView
+                    android:id="@+id/tv_my_attent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:drawableLeft="@drawable/guanzhu"
+                    android:drawablePadding="10dp"
+                    android:drawableRight="@drawable/right_arrow"
+                    android:gravity="center_vertical"
+                    android:padding="3dp"
+                    android:text="@string/my_attent"
+                    android:textColor="@color/info_text_color" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white" >
+
+                <TextView
+                    android:id="@+id/tv_my_kefutel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:background="@color/white"
+                    android:drawableLeft="@drawable/kefu"
+                    android:drawablePadding="10dp"
+                    android:drawableRight="@drawable/right_arrow"
+                    android:gravity="center_vertical"
+                    android:padding="3dp"
+                    android:text="@string/my_kefu_tel"
+                    android:textColor="@color/info_text_color" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/view_line_height"
+                android:background="@color/line" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white" >
+
+                <TextView
+                    android:id="@+id/tv_my_setting"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:background="@color/white"
+                    android:drawableLeft="@drawable/shezhi"
+                    android:drawablePadding="10dp"
+                    android:drawableRight="@drawable/right_arrow"
+                    android:gravity="center_vertical"
+                    android:padding="3dp"
+                    android:text="@string/my_setting"
+                    android:textColor="@color/info_text_color" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/view_line_height"
+                android:background="@color/line" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white" >
+
+                <TextView
+                    android:id="@+id/tv_my_feedback"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:background="@color/white"
+                    android:drawableLeft="@drawable/fankui"
+                    android:drawablePadding="10dp"
+                    android:drawableRight="@drawable/right_arrow"
+                    android:gravity="center_vertical"
+                    android:padding="3dp"
+                    android:text="@string/my_feedback"
+                    android:textColor="@color/info_text_color" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

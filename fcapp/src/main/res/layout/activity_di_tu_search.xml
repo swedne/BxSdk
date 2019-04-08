@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+     android:fitsSystemWindows="true"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/titlebase"
+        layout="@layout/title_base03" />
+
+    <ListView
+        android:id="@+id/lv_result_search"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/titlebase" >
+    </ListView>
+
+    <include
+        android:id="@+id/search_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/titlebase"
+        layout="@layout/item_searchempty"
+        android:visibility="gone" />
+
+</RelativeLayout>

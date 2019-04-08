@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zorasun.fangchanzhichuang">
+
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCES_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_GPS" /><!-- SDK1.5需要android.permission.GET_TASKS权限判断本程序是否为当前运行的应用? -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" /><!-- 来电消音 -->
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" /><!-- 摄影机 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <!-- SDK1.5需要android.permission.GET_TASKS权限判断本程序是否为当前运行的应用? -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" /><!-- 来电消音 -->
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <!-- 常规权限 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.SET_DEBUG_APP" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.NFC" />
+    <uses-permission android:name="android.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+
+    <!-- 友盟 start --><!-- 友盟需要增加权限 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="fandroid.permission.SET_DEBUG_APP" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" /><!-- 友盟  end -->
+
+
+    <!-- 极光推送需要权限Required  一些系统要求的权限，如访问网络等 -->
+    <uses-permission android:name="com.zorasun.fangchanzhichuang.JPUSH_MESSAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" /><!-- 极光推送  end -->
+
+    <application
+        android:name=".FcgzApplaciton"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@android:style/Theme.Translucent.NoTitleBar">
+        <!--<meta-data-->
+        <!--android:name="com.baidu.lbsapi.API_KEY"-->
+        <!--android:value="3EMDeF074NWq0OhGHvmyKxG1KDG6z4FN" />-->
+
+        <meta-data
+            android:name="com.qihoo360.plugin.name"
+            android:value="${applicationId}" />
+        <meta-data
+            android:name="com.qihoo360.plugin.version.low"
+            android:value="10" />
+        <meta-data
+            android:name="com.qihoo360.plugin.version.high"
+            android:value="10" />
+        <meta-data
+            android:name="com.qihoo360.framework.ver"
+            android:value="4" />
+        <meta-data
+            android:name="com.qihoo360.plugin.version.ver"
+            android:value="${pluginVer}" />
+
+        <activity
+            android:name=".section.IntroActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service android:name=".general.widget.timer.TimerService"></service>
+
+        <activity
+            android:name=".general.widget.imagelook.ui.ImagePagerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".general.widget.imageselect.MultiImageSelectorActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".section.HomeActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".section.account.LoginActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".section.senddemand.BuySecondHouseActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".general.widget.PhotoSelectActivity"
+            android:configChanges="locale|orientation"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".section.senddemand.SellSecondHouseActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".section.senddemand.WantRentActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".section.my.MyDataActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".section.my.SettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".section.my.DemandDetaliActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".section.my.MyDemandActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".section.my.MyDemandActivity2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".section.account.RegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".section.my.MyCollectActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".section.my.MyCollectActivity2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".section.my.MyAttentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".section.index.ChooseCityActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".section.index.IndexSerachActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".section.index.SecondHouseDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".section.index.JingjiRenActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".section.index.JingjirenXqActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".section.index.BusinessSearchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".section.index.SecondHouseActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".section.index.SecondHouseActivity2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".section.index.IndexSecondHouseActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".section.index.ZuFangActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".section.index.ZuFangxqActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".section.index.XinFangActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".section.index.XinFangxqActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".section.index.IndexDiTuSearchActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".section.index.ShangYeDiChanActivity" />
+        <activity
+            android:name=".section.index.ChanQuanYanZhengActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".section.index.IndexFangChanResultActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".section.my.AboutUsActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".section.my.ContactUsActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".section.my.FankuiYijianActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".section.index.CalculatorActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".section.account.ForgetPSWActivity"
+            android:label="@string/title_activity_forget_psw"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".section.my.CommentActivity"
+            android:label="@string/title_activity_comment"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".section.my.CancleDemandActivity"
+            android:label="@string/title_activity_cancle_demand"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".section.index.HuXingShowActivity"
+            android:label="@string/title_activity_hu_xing_show"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".section.index.LouPanCameraActivity"
+            android:label="@string/title_activity_lou_pan_camera"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".section.index.LoanCalActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".section.index.AdjustActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".section.index.FundCalActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".section.index.TaxCalActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".section.index.TaxResultActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".section.index.tools.ToolActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".section.index.TuDiGongActivity"
+            android:label="@string/title_activity_tu_di_gong"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".section.account.NiChengActivity"
+            android:label="@string/title_activity_ni_cheng"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".section.index.XiaoQuActivity"
+            android:label="@string/title_activity_xiao_qu"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".section.index.IndexSheQuCommonActivity"
+            android:label="@string/title_activity_she_qu_zhuan_jia"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".section.index.FuJinFangActivity"
+            android:label="@string/title_activity_fu_jin_fang"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".section.index.SuoShuJiGouActivity"
+            android:label="@string/title_activity_suo_shu_ji_gou"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".section.index.FuWuPingJiaActivity"
+            android:label="@string/title_activity_fu_wu_ping_jia"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".section.index.WidePriceActivity"
+            android:label="@string/title_activity_wide_price"
+            android:screenOrientation="portrait"></activity>
+
+        <!--<service-->
+        <!--android:name="com.baidu.location.f"-->
+        <!--android:enabled="true"-->
+        <!--android:process=":remote">-->
+        <!--<intent-filter>-->
+        <!--<action android:name="com.baidu.location.service_v2.2" />-->
+        <!--</intent-filter>-->
+        <!--</service>-->
+
+        <activity
+            android:name=".section.index.QiuGouXinFangActivity"
+            android:label="@string/title_activity_qiu_gou_xin_fang"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"></activity>
+        <activity
+            android:name=".section.index.ShangPuDetailActivity"
+            android:label="@string/title_activity_shang_ye_di_chan_info"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".section.index.ChangFangDetailActivity"
+            android:label="@string/title_activity_chang_fang_detail"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".section.index.CheWeiActivity"
+            android:label="@string/title_activity_che_wei"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".section.index.XieZiLouActivity"
+            android:label="@string/title_activity_xie_zi_lou"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".section.senddemand.SearchArealistActivity"
+            android:label="@string/title_activity_search_arealist"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"></activity>
+        <activity
+            android:name=".section.index.JiGouHouseResActivity"
+            android:label="@string/title_activity_ji_gou_house_res"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".section.message.GongGaoActivity"
+            android:label="@string/title_activity_gong_gao"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".section.index.ImageActivity"
+            android:label="@string/title_activity_image"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".section.account.XiuGaiMiMaActivity"
+            android:label="@string/title_activity_xiu_gai_mi_ma"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".section.account.BindAccountActivity"
+            android:label="@string/title_activity_xiu_gai_mi_ma"
+            android:screenOrientation="portrait"></activity>
+
+        <!-- 友盟 start -->
+        <activity
+            android:name="com.umeng.socialize.editorpage.ShareActivity"
+            android:excludeFromRecents="true"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" />
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="57e908f9e0f55a6a350021de"></meta-data>
+        <!-- QQ、QQ空间 -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent101254589" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!-- 微信 -->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+
+        <activity android:name="com.zorasun.fangchanzhichuang.section.index.AroundSecHouseActivity"></activity>
+    </application>
+
+</manifest>

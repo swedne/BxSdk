@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/border_white_corner2"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/dwp_txt_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:text="温馨提示"
+        android:textColor="@color/title_bg"
+        android:textSize="19sp" />
+
+    <View
+        style="@style/line"
+        android:layout_margin="5dp"
+        android:layout_marginTop="@dimen/five" />
+
+    <RelativeLayout
+        android:id="@+id/dwp_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/ten"
+        android:layout_marginLeft="@dimen/fifteen"
+        android:layout_marginRight="@dimen/fifteen" >
+
+        <TextView
+            android:id="@+id/dwp_txt_content"
+            style="@style/text_style"
+            android:layout_width="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="是否删除该规格?" />
+
+        <EditText
+            android:id="@+id/dwp_et_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/border_gray_nocorner"
+            android:ems="11"
+            android:hint="请输入您的手机号"
+            android:inputType="number"
+            android:maxLength="11"
+            android:padding="@dimen/five"
+            android:singleLine="true"
+            android:textSize="@dimen/txt_size_14sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="11dp"
+        android:background="@color/title_bg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/dwp_btn_quxiao"
+            style="@style/text_style"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/border_white_corner2"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="取\t消"
+            android:textSize="16sp" />
+
+        <View
+            android:id="@+id/line2"
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:background="@color/title_bg" />
+
+        <Button
+            android:id="@+id/dwp_btn_queren"
+            style="@style/text_style"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/border_white_corner2"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="确\t定"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>

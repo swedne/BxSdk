@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zorasun.fangchanzhichuang.section.message.AllMsgsFragment" >
+
+    <com.zorasun.fangchanzhichuang.general.widget.pulltorefresh.PullToRefreshListView
+        android:id="@+id/ptr_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/middle_line"
+        android:background="@color/home_bg"
+        android:divider="@null"
+        android:listSelector="@android:color/transparent"
+        android:paddingBottom="6dp"
+        android:scrollbars="none" />
+
+    <include
+        android:id="@+id/data_error"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/middle_line"
+        android:layout_centerInParent="true"
+        layout="@layout/include_customview" />
+
+</RelativeLayout>

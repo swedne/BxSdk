@@ -1,0 +1,20 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.zorasun.fangchanzhichuang.general.widget.pulltorefresh.PullToRefreshListView
+        android:id="@+id/ptr_listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="#00000000" >
+    </com.zorasun.fangchanzhichuang.general.widget.pulltorefresh.PullToRefreshListView>
+
+    <include
+        android:id="@+id/data_error"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        layout="@layout/include_customview" />
+
+</RelativeLayout>

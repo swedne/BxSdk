@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/home_bg"
+     android:fitsSystemWindows="true"
+    android:focusableInTouchMode="true" >
+
+    <include
+        android:id="@+id/titleBar"
+        layout="@layout/title_base" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleBar"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true" >
+
+                    <ImageView
+                        android:id="@+id/img_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_alignParentTop="true"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/lunbo_noresult" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/relativeLayout1"
+                    android:background="@color/white" >
+
+                    <TextView
+                        android:id="@+id/tv_realname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="119dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="4dp"
+                        android:textColor="@color/txt_black_deep"
+                        android:textSize="20sp" />
+                </RelativeLayout>
+
+                <com.zorasun.fangchanzhichuang.general.widget.CircleImageView
+                    android:id="@+id/imt_avatar"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_alignBottom="@+id/relativeLayout2"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginBottom="22dp"
+                    android:layout_marginLeft="30dp"
+                    android:src="@drawable/touxiang" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray_bg" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/tv_qualificationNo02"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:ems="3"
+                    android:text="备  案  号"
+                    android:textColor="@color/txt_gray" />
+
+                <TextView
+                    android:id="@+id/tv_qualificationNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/tv_qualificationNo02"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="21dp"
+                    android:layout_toRightOf="@+id/tv_qualificationNo02"
+                    android:textColor="@color/info_text_color" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical" >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:background="@color/gray_bg" />
+
+                <TextView
+                    android:id="@+id/tv_companyInfo02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/tv_companyInfo"
+                    android:layout_alignTop="@+id/tv_companyInfo"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="12dp"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="12dp"
+                    android:text="公司简介"
+                    android:textColor="@color/txt_gray" />
+
+                <TextView
+                    android:id="@+id/tv_companyInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="21dp"
+                    android:layout_toRightOf="@+id/tv_companyInfo02"
+                    android:paddingBottom="12dp"
+                    android:paddingTop="12dp"
+                    android:textColor="@color/info_text_color" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_secondmore"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/white" >
+
+                <TextView
+                    android:id="@+id/tv_secondhousenum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="21dp"
+                    android:text="二手房源（0套）"
+                    android:textColor="@color/info_text_color" />
+
+                <TextView
+                    android:id="@+id/tv_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="21dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="21dp"
+                    android:text="更多"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/txt_size_12sp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:paddingBottom="6dp" >
+
+                <com.zorasun.fangchanzhichuang.general.widget.NoScrollGridView2
+                    android:id="@+id/gv_secondhouse"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:background="@color/white"
+                    android:listSelector="#00000000"
+                    android:numColumns="2" >
+                </com.zorasun.fangchanzhichuang.general.widget.NoScrollGridView2>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_rentmore"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/white" >
+
+                <TextView
+                    android:id="@+id/tv_renthousenum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="21dp"
+                    android:text="出租房源（0套）"
+                    android:textColor="@color/info_text_color" />
+
+                <TextView
+                    android:id="@+id/tv_chuzumore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="21dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="21dp"
+                    android:text="更多"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/txt_size_12sp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingBottom="6dp" >
+
+                <com.zorasun.fangchanzhichuang.general.widget.NoScrollGridView
+                    android:id="@+id/gv_renthouse"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:listSelector="#00000000"
+                    android:numColumns="2" >
+                </com.zorasun.fangchanzhichuang.general.widget.NoScrollGridView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingBottom="5dp" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingBottom="12dp"
+                android:paddingTop="12dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:paddingLeft="20dp"
+                    android:text="经纪人"
+                    android:textColor="@color/txt_black_deep" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/horizontallistview1"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:background="@color/white" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray_bg" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:visibility="gone" >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginRight="15dp"
+                    android:layout_toLeftOf="@+id/relativeLayout3"
+                    android:background="@drawable/juxing_n"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:drawableLeft="@drawable/dianhua_n"
+                        android:drawablePadding="5dp"
+                        android:gravity="center"
+                        android:text="打电话"
+                        android:textColor="#38A8F0" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/juxing_n"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:drawableLeft="@drawable/duanxin_p"
+                        android:drawablePadding="5dp"
+                        android:gravity="center"
+                        android:text="短信"
+                        android:textColor="#38A8F0" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

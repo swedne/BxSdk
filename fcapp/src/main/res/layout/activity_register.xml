@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_base" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/ten"
+        android:layout_marginRight="@dimen/ten"
+        android:layout_marginTop="@dimen/twenty"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:padding="@dimen/five"
+            android:text="手机:"
+            android:textColor="@color/txt_black_deep"
+            android:textSize="@dimen/txt_size_14sp" />
+
+        <EditText
+            android:id="@+id/et_phone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:hint="@string/please_input_phone"
+            android:inputType="number"
+            android:maxLength="11"
+            android:padding="@dimen/five"
+            android:singleLine="true"
+            android:textColorHint="@color/text_color"
+            android:textSize="@dimen/txt_size_14sp" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/ten"
+        android:layout_marginRight="@dimen/ten"
+        android:background="@color/line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/two"
+        android:layout_marginLeft="@dimen/ten"
+        android:layout_marginRight="@dimen/ten"
+        android:layout_marginTop="@dimen/twenty"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:padding="@dimen/five"
+            android:text="验证码:"
+            android:textColor="@color/txt_black_deep"
+            android:textSize="@dimen/txt_size_14sp" />
+
+        <EditText
+            android:id="@+id/et_verification"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:hint="@string/please_input_verification"
+            android:inputType="number"
+            android:maxLength="6"
+            android:padding="@dimen/five"
+            android:singleLine="true"
+            android:textColorHint="@color/text_color"
+            android:textSize="@dimen/txt_size_14sp" />
+
+        <com.zorasun.fangchanzhichuang.general.widget.timer.TimerTextView
+            android:id="@+id/btn_get_verification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/title_bg"
+            android:clickable="true"
+            android:paddingBottom="@dimen/five"
+            android:paddingLeft="@dimen/ten"
+            android:paddingRight="@dimen/ten"
+            android:paddingTop="@dimen/five"
+            android:text="@string/get_verification"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_size_14sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/ten"
+        android:layout_marginRight="@dimen/ten"
+        android:background="@color/line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/ten"
+        android:layout_marginRight="@dimen/ten"
+        android:layout_marginTop="@dimen/twenty"
+        android:background="@android:color/white" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:padding="@dimen/five"
+            android:text="密码:"
+            android:textColor="@color/txt_black_deep"
+            android:textSize="@dimen/txt_size_14sp" />
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:hint="@string/please_input_pwd"
+            android:inputType="textPassword"
+            android:maxLength="20"
+            android:padding="@dimen/five"
+            android:singleLine="true"
+            android:textColorHint="@color/text_color"
+            android:textSize="@dimen/txt_size_14sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/ten"
+        android:layout_marginRight="@dimen/ten"
+        android:background="@color/line" />
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/ten"
+        android:layout_marginRight="@dimen/ten"
+        android:layout_marginTop="@dimen/fourty"
+        android:background="@color/title_bg"
+        android:gravity="center"
+        android:padding="@dimen/ten"
+        android:text="@string/now_register"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/txt_size_18sp" />
+
+</LinearLayout>

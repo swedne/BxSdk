@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/ll_headView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="12dp"
+                android:paddingLeft="12dp"
+                android:paddingTop="12dp" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        style="@style/text_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="面积" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView1"
+                        android:layout_marginTop="6dp" >
+
+                        <com.zorasun.fangchanzhichuang.general.widget.NoScrollGridView
+                            android:id="@+id/grid_shangyedichan_area"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:listSelector="#00000000"
+                            android:numColumns="3"
+                            android:scrollbars="none" >
+                        </com.zorasun.fangchanzhichuang.general.widget.NoScrollGridView>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginRight="12dp"
+                        android:background="@color/gray" >
+                    </View>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_shangyedichan_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <TextView
+                        style="@style/text_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="位置" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView1"
+                        android:layout_marginTop="6dp" >
+
+                        <com.zorasun.fangchanzhichuang.general.widget.NoScrollGridView
+                            android:id="@+id/grid_shagyedichan_location"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:listSelector="#00000000"
+                            android:numColumns="3"
+                            android:scrollbars="none" >
+                        </com.zorasun.fangchanzhichuang.general.widget.NoScrollGridView>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginRight="6dp"
+                        android:background="@color/gray" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_shangyedichan_tese"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <TextView
+                        style="@style/text_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="特色" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView1"
+                        android:layout_marginTop="6dp" >
+
+                        <com.zorasun.fangchanzhichuang.general.widget.NoScrollGridView
+                            android:id="@+id/grid_shagyedichan_tese"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:listSelector="#00000000"
+                            android:numColumns="3"
+                            android:scrollbars="none" >
+                        </com.zorasun.fangchanzhichuang.general.widget.NoScrollGridView>
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/line_tese"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginRight="6dp"
+                        android:background="@color/gray" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_shangyedichan_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tv_rental_price"
+                        style="@style/text_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="租金" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView1"
+                        android:layout_marginTop="6dp" >
+
+                        <com.zorasun.fangchanzhichuang.general.widget.NoScrollGridView
+                            android:id="@+id/grid_rental"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:listSelector="#00000000"
+                            android:numColumns="3"
+                            android:scrollbars="none" >
+                        </com.zorasun.fangchanzhichuang.general.widget.NoScrollGridView>
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/zujin_line"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginRight="12dp"
+                        android:background="@color/gray" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_shangyedichan_classify"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/TextView12"
+                        style="@style/text_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="类型" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView1"
+                        android:layout_marginTop="6dp" >
+
+                        <com.zorasun.fangchanzhichuang.general.widget.NoScrollGridView
+                            android:id="@+id/grid_classify"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:listSelector="#00000000"
+                            android:numColumns="3"
+                            android:scrollbars="none" >
+                        </com.zorasun.fangchanzhichuang.general.widget.NoScrollGridView>
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/line2"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginRight="12dp"
+                        android:background="@color/gray" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_shangyedichan_jibie"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <TextView
+                        style="@style/text_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="级别" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView1"
+                        android:layout_marginTop="6dp" >
+
+                        <com.zorasun.fangchanzhichuang.general.widget.NoScrollGridView
+                            android:id="@+id/grid_shangyedichan_jibie"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:listSelector="#00000000"
+                            android:numColumns="3"
+                            android:scrollbars="none" >
+                        </com.zorasun.fangchanzhichuang.general.widget.NoScrollGridView>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginRight="12dp"
+                        android:background="@color/gray" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_shangyedichan_downpayment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <TextView
+                        style="@style/text_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="首付" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView1"
+                        android:layout_marginTop="6dp" >
+
+                        <com.zorasun.fangchanzhichuang.general.widget.NoScrollGridView
+                            android:id="@+id/grid_downpayment"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:listSelector="#00000000"
+                            android:numColumns="3"
+                            android:scrollbars="none" >
+                        </com.zorasun.fangchanzhichuang.general.widget.NoScrollGridView>
+                    </LinearLayout>
+                </LinearLayout>
+                <!-- <View -->
+                <!-- android:id="@+id/line3" -->
+                <!-- android:layout_width="match_parent" -->
+                <!-- android:layout_height="1dp" -->
+                <!-- android:layout_marginTop="6dp" -->
+                <!-- android:background="@color/gray" /> -->
+
+                <LinearLayout
+                    android:id="@+id/ll_shangyedichan_decorate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/TextView19"
+                        style="@style/text_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="装修程度" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView1"
+                        android:layout_marginTop="6dp" >
+
+                        <com.zorasun.fangchanzhichuang.general.widget.NoScrollGridView
+                            android:id="@+id/grid_decoreate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:listSelector="#00000000"
+                            android:numColumns="3"
+                            android:scrollbars="none" >
+                        </com.zorasun.fangchanzhichuang.general.widget.NoScrollGridView>
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/line4"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginRight="12dp"
+                        android:background="@color/gray" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_shangyedichan_houseage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/TextView20"
+                        style="@style/text_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="房龄" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView1"
+                        android:layout_marginTop="6dp" >
+
+                        <com.zorasun.fangchanzhichuang.general.widget.NoScrollGridView
+                            android:id="@+id/grid_shangyedichan_houseage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:listSelector="#00000000"
+                            android:numColumns="3"
+                            android:scrollbars="none" >
+                        </com.zorasun.fangchanzhichuang.general.widget.NoScrollGridView>
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/line5"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginRight="12dp"
+                        android:background="@color/gray" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_shangyedichan_floornum"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/textView22"
+                        style="@style/text_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="楼层" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView1"
+                        android:layout_marginTop="6dp" >
+
+                        <com.zorasun.fangchanzhichuang.general.widget.NoScrollGridView
+                            android:id="@+id/grid_shangyedichan_floornum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:listSelector="#00000000"
+                            android:numColumns="3"
+                            android:scrollbars="none" >
+                        </com.zorasun.fangchanzhichuang.general.widget.NoScrollGridView>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_shangyedichan_clear"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:background="@color/gray"
+                android:gravity="center"
+                android:text="清空条件"
+                android:textColor="@color/txt_black_midle" />
+
+            <Button
+                android:id="@+id/btn_shangyedichan_sure"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/shape_button"
+                android:text="确认"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

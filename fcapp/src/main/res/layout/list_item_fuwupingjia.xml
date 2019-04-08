@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <LinearLayout
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <com.zorasun.fangchanzhichuang.general.widget.CircleImageView
+                android:id="@+id/img_broker"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/touxiang" />
+
+            <TextView
+                android:id="@+id/tv_brokerName"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="4"
+                android:textColor="@color/info_text_color" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="12dp" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp" >
+
+                <TextView
+                    android:id="@+id/TextView02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="房屋信息真实度"
+                    android:textColor="@color/txt_black_deep" />
+
+                <com.zorasun.fangchanzhichuang.general.widget.RatingBarView
+                    android:id="@+id/ratingBarGoods2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/TextView02"
+                    android:clickable="false"
+                    app:starCount="5"
+                    app:starEmpty="@drawable/xingxing_n"
+                    app:starFill="@drawable/xingxing_p"
+                    app:starImageSize="25dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp" >
+
+                <TextView
+                    android:id="@+id/TextView01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="服务态度满意度"
+                    android:textColor="@color/txt_black_deep" />
+
+                <com.zorasun.fangchanzhichuang.general.widget.RatingBarView
+                    android:id="@+id/ratingBarGoods3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/TextView01"
+                    android:clickable="false"
+                    app:starCount="5"
+                    app:starEmpty="@drawable/xingxing_n"
+                    app:starFill="@drawable/xingxing_p"
+                    app:starImageSize="25dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp" >
+
+                <TextView
+                    android:id="@+id/TextView03"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:text="业务水平专业度"
+                    android:textColor="@color/txt_black_deep" />
+
+                <com.zorasun.fangchanzhichuang.general.widget.RatingBarView
+                    android:id="@+id/ratingBarGoods1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/TextView03"
+                    android:clickable="false"
+                    app:starCount="5"
+                    app:starEmpty="@drawable/xingxing_n"
+                    app:starFill="@drawable/xingxing_p"
+                    app:starImageSize="25dp" >
+                </com.zorasun.fangchanzhichuang.general.widget.RatingBarView>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp" >
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="介绍的房源真实有效，业务水平很高，服务态度很好。"
+                    android:textColor="@color/text_color" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <View
+                    android:layout_width="30dp"
+                    android:layout_height="@dimen/line"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="6dp"
+                    android:layout_toLeftOf="@+id/TextView04"
+                    android:background="@color/text_color" />
+
+                <TextView
+                    android:id="@+id/TextView04"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="2015-06-11"
+                    android:textColor="@color/text_color" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

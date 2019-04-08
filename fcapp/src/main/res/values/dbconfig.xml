@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- +++++++++++++++++++++数据库配置++++++++++++++++++++++ -->
+    
+    <!-- 数据库名称 -->
+    <string name="db_name">xmfczc_v1.db</string>
+    <!-- 数据库版本号 -->
+    <string name="db_version">1</string>
+
+    <!-- 数据库表名称，请配置时，直接使用实体类的类名称 -->
+    <string-array name="db_tables">
+
+        <item>com.zorasun.xmfczc.section.account.entity.AccountEntity</item>
+        
+    </string-array>
+
+</resources>

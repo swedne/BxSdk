@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   
+    android:orientation="vertical" >
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+       
+        android:background="@color/white"
+        
+        >
+        
+        <ImageView 
+            
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            
+            />
+        <RelativeLayout 
+            
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            
+            >
+
+            <TextView
+                android:id="@+id/tv_attentname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:padding="10dp"
+                android:layout_alignParentTop="true"
+                android:text="李丽" />
+            
+            
+            <TextView 
+                
+                android:id="@+id/tv_cancleattent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:padding="10dp"
+                android:text="取消关注"
+                
+                />
+
+            <TextView
+                android:id="@+id/tv_attentaddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/tv_attentname"
+                android:layout_marginLeft="10dp"
+                android:text="莲坂" />
+            
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="15dp"
+                android:layout_toRightOf="@+id/tv_attentaddress"
+                android:layout_below="@+id/tv_attentname"
+                android:layout_marginLeft="10dp"
+                android:background="@color/black" />
+
+            <TextView
+                android:id="@+id/tv_attentnicl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tv_attentaddress"
+                android:layout_alignBottom="@+id/tv_attentaddress"
+                android:layout_toRightOf="@+id/tv_attentname"
+                android:layout_marginLeft="10dp"
+                android:text="社区专家" />
+
+            <TextView
+                android:id="@+id/tv_attentcommuny"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tv_attentaddress"
+                android:layout_below="@+id/tv_attentaddress"
+                android:layout_marginTop="14dp"
+                android:text="富士花园、富士花园、富士花园" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_attentcommuny"
+                android:orientation="horizontal" >
+                
+                <TextView 
+                    
+                    android:id="@+id/tv_attenttag01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/title_bg"
+                    android:text="别墅"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:layout_marginBottom="10dp"
+                    />
+                
+                <TextView
+                    android:id="@+id/tv_attenttag02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.24"
+                    android:background="@color/title_bg"
+                     android:layout_marginLeft="10dp"
+                      android:gravity="center"
+                    android:text="中高档公寓" />
+                
+                <TextView 
+                    
+                    android:id="@+id/tv_attenttag03"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/title_bg"
+                     android:layout_marginLeft="10dp"
+                    android:text="市中心"
+                     android:gravity="center"
+                    />
+                
+            </LinearLayout>
+            
+        </RelativeLayout>
+        
+    </LinearLayout>
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/home_bg"
+        
+        
+        />
+
+</LinearLayout>

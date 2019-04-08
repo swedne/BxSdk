@@ -1,0 +1,29 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray"
+    android:fitsSystemWindows="true" >
+
+    <include
+        android:id="@+id/include1"
+        layout="@layout/title_base" />
+
+    <EditText
+        android:id="@+id/et_content"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/include1"
+        android:background="@color/white"
+        android:gravity="top"
+        android:hint="请输入取消需求的原因"
+        android:padding="12dp"
+        android:maxLength="100"
+        android:textColor="@color/txt_black_deep"
+        android:textSize="@dimen/txt_size_14sp" >
+
+        <requestFocus />
+    </EditText>
+
+</RelativeLayout>

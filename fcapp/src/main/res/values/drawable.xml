@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <drawable name="houseloan_bg_pressed">#009aff</drawable>
+    <drawable name="houseloan_bg_default">#ffffff</drawable>
+</resources>

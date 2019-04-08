@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/home_bg"
+    android:fitsSystemWindows="true" >
+
+    <include
+        android:id="@+id/titlebar"
+        layout="@layout/title_base" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rl_bottom"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/titlebar" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/rl_daiqiangdan"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@color/home_bg"
+                android:gravity="center" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/chenggong"
+                    android:drawablePadding="6dp"
+                    android:gravity="center_vertical"
+                    android:padding="15dp"
+                    android:text="需求发布成功，请等待社区经纪人抢单"
+                    android:textColor="@color/txt_black_deep" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_yiqiangdan"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@color/home_bg"
+                android:gravity="center"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/tv_titleInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:text="您好！为您服务的社区专家"
+                    android:textColor="@color/txt_black_deep" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_titleInfo"
+                    android:layout_marginTop="12dp"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:id="@+id/title_brokername"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/txt_black_deep" />
+
+                    <TextView
+                        android:id="@+id/titlePhone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:drawableLeft="@drawable/shape"
+                        android:gravity="center"
+                        android:textColor="@color/txt_black_deep" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_xuqiuquxiao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/home_bg"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/textview2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:text="需求已取消，原因:"
+                    android:textColor="@color/txt_black_deep" />
+
+                <TextView
+                    android:id="@+id/tv_canclereson"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textview2"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="6dp"
+                    android:gravity="center"
+                    android:textColor="@color/txt_gray" />
+            </RelativeLayout>
+
+            <include
+                android:id="@+id/demainddetial"
+                layout="@layout/view_demand_detail_one" />
+
+            <include
+                android:id="@+id/demainddetialtwo"
+                layout="@layout/view_demand_detail_two"
+                android:visibility="gone" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/rl_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="1dp"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <RelativeLayout
+            android:id="@+id/rl_demandevaluate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="8dp"
+            android:visibility="gone" >
+
+            <TextView
+                android:layout_width="64dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_button"
+                android:gravity="center"
+                android:paddingBottom="6dp"
+                android:paddingTop="6dp"
+                android:text="评\t价"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_modifyvalue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="8dp"
+            android:visibility="gone" >
+
+            <TextView
+                android:layout_width="64dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_button"
+                android:gravity="center"
+                android:paddingBottom="6dp"
+                android:paddingTop="6dp"
+                android:text="修改评价"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_rentareldy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="8dp"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/tv_rentalready"
+                android:layout_width="64dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_text_corner_blue"
+                android:gravity="center"
+                android:paddingBottom="6dp"
+                android:paddingTop="6dp"
+                android:text="已出租"
+                android:textColor="@color/title_bg" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_demandcancle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="8dp"
+            android:visibility="gone" >
+
+            <TextView
+                android:layout_width="64dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_text_corner_blue"
+                android:gravity="center"
+                android:paddingBottom="6dp"
+                android:paddingTop="6dp"
+                android:text="取消需求"
+                android:textColor="@color/title_bg" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

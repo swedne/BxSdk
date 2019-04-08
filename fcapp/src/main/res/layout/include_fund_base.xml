@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/include_fund_base"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_gray"
+        android:padding="10dp"
+        android:text="@string/loaner_one"
+        android:textColor="@color/txt_black_deep" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="16dp" >
+
+        <TextView
+            android:id="@+id/tv_fundloaner_one_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="公积金月缴金额"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/et_fundloaner_one_money"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="numberDecimal" >
+        </EditText>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="元"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <View style="@style/line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="16dp" >
+
+        <TextView
+            android:id="@+id/tv_fundloaner_one_ratio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="公积金缴交比例"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/et_fundloaner_one_ratio"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="%"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <View style="@style/line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="16dp" >
+
+        <TextView
+            android:id="@+id/tv_fundloaner_one_balance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="公积金账户余额"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/et_fundloaner_one_balance"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="元"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_gray"
+        android:padding="10dp"
+        android:text="@string/loaner_two"
+        android:textColor="@color/txt_black_deep" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="16dp" >
+
+        <TextView
+            android:id="@+id/tv_fundloaner_two_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="公积金月缴金额"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/et_fundloaner_two_money"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="numberDecimal" >
+        </EditText>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="元"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <View style="@style/line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="16dp" >
+
+        <TextView
+            android:id="@+id/tv_fundloaner_two_ratio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="公积金缴交比例"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/et_fundloaner_two_ratio"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="%"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <View style="@style/line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="16dp" >
+
+        <TextView
+            android:id="@+id/tv_fundloaner_two_balance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="公积金账户余额"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/et_fundloaner_two_balance"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="元"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+</LinearLayout>

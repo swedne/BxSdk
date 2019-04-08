@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:fitsSystemWindows="true"
+    android:background="@color/bg_gray" >
+
+    <include
+        android:id="@+id/titlebase"
+        layout="@layout/title_base" />
+
+    <com.zorasun.fangchanzhichuang.general.widget.pulltorefresh.PullToRefreshListView
+        android:id="@+id/ptr_listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/titlebase"
+        android:layout_gravity="bottom"
+        android:background="@color/home_bg"
+        android:divider="@color/line"
+        android:dividerHeight="@dimen/line" >
+    </com.zorasun.fangchanzhichuang.general.widget.pulltorefresh.PullToRefreshListView>
+
+    <include
+        android:id="@+id/data_error"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/titlebase"
+        android:layout_centerInParent="true"
+        layout="@layout/include_customview" />
+
+    <RelativeLayout
+        android:id="@+id/rl_paixu"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="68dp"
+        android:layout_marginRight="20dp" >
+
+        <ImageView
+            android:id="@+id/img_around_paixu"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/paixu" />
+
+        <TextView
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/img_rent_paixu"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="4dp"
+            android:gravity="center_horizontal"
+            android:text="排序"
+            android:textColor="@color/white"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

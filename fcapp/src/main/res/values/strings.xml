@@ -1,0 +1,811 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">房产之窗</string>
+    <string name="exit">再按一次退出应用</string>
+    <string name="get_code">获取验证码</string>
+    <string name="title_route_guide_demo">1. GPS导航(RouteGuideDemo)</string>
+    <!-- 图片查看器 -->
+    <string name="viewpager_indicator">%1$d/%2$d</string>
+    <string name="folder_all">所有图片</string>
+    <string name="msg_no_camera">No system camera found</string>
+    <string name="msg_amount_limit">超出限制的张数,不可再选</string>
+    <!-- 图片浏览 -->
+    <string name="only_choose_num">超出可选图片张数</string>
+    <string name="finish">完成</string>
+    <string name="invalidSD">sdcard无效或没有插入！</string>
+    <string name="photo">选择相册</string>
+    <string name="album">相册</string>
+    <string name="preview">预览</string>
+    <string name="unfinished">完成</string>
+    <string name="camera_cancel">取消</string>
+    <string name="no_photo">相册没有图片</string>
+    <!-- home -->
+    <string name="love_health">爱健康</string>
+    <string name="love_family">爱家人</string>
+    <string name="love_oneself">爱自己</string>
+
+    <!-- 分享 -->
+    <string name="tv_share_wx">微信好友</string>
+    <string name="tv_share_wx2">微信朋友圈</string>
+    <string name="tv_share_qq">qq好友</string>
+    <string name="tv_share_weibo">微博</string>
+
+    <!-- version update -->
+    <string name="version_update_error">文件下载失败，请稍后再试</string>
+    <string name="version_update_title">更新中...</string>
+    <string name="version_update_no_url">没有更新地址，请稍后再试</string>
+    <string name="version_update_wait">下载中...</string>
+    <string name="version_update_concel">下载取消</string>
+    <string name="version_newest">当前已是最新版本！</string>
+    <string name="version_is_update">有更新，是否马上更新？</string>
+    <!-- 公共 -->
+    <string name="post">发送</string>
+    <string name="sure">确定</string>
+    <string name="go_on">继续</string>
+    <string name="cancel">取消</string>
+    <string name="edit">编辑</string>
+    <string name="delete">删除</string>
+    <string name="sure_two">确认</string>
+    <string name="submit">提交</string>
+    <string name="pay_success">支付成功！</string>
+
+    <!-- 网络请求 -->
+    <string name="net_error">网络错误请重试！</string>
+    <string name="net_error2">网络无法连接，请检查是否联网</string>
+    <string name="tv_error2">重新加载</string>
+
+    <!-- 登录 -->
+    <string name="register">注册</string>
+    <string name="password">密码</string>
+    <string name="verification">验证码</string>
+    <string name="forget_password">忘记密码</string>
+    <string name="login">登录</string>
+    <string name="login_weixin">微信登录</string>
+    <string name="login_weibo">微博登录</string>
+    <string name="login_qq">QQ登录</string>
+    <string name="phone_number">手机号</string>
+    <string name="please_input_pwd">请输入4位密码</string>
+    <string name="please_input_newpwd">请输入新密码</string>
+    <string name="please_sure_newpwd">请确认新密码</string>
+    <string name="please_input_oldpwd">请输入旧密码</string>
+    <string name="please_input_right_pwd">请输入4-20位数字、字母组合密码</string>
+    <string name="please_input_verification">请输入短信验证码</string>
+    <string name="please_input_phone">请输入手机号</string>
+    <string name="please_input_right_phone">请输入正确的手机号码</string>
+    <string name="please_input_right_verification">请输入正确的验证码</string>
+    <string name="get_verification">获取验证码</string>
+    <string name="now_register">注册</string>
+    <string name="agree">&#160;&#160;同意</string>
+    <string name="agreement">《爱基因服务条款》</string>
+    <string name="register_name">注册</string>
+    <string name="get_code_time">后重新发送</string>
+    <string name="login_with_verification">手机验证码登录</string>
+    <string name="login_with_password">密码登录</string>
+    <string name="bind_account">绑定手机</string>
+    <string name="find_password">找回密码</string>
+    <string name="bind_now_account">绑定已有账号</string>
+    <string name="register_bind_account">注册并绑定</string>
+    <!-- 个人信息 -->
+    <string name="title_person_info">个人信息</string>
+    <string name="my_integral">我的积分</string>
+    <string name="my_shop">积分商城</string>
+    <string name="my_order">我的订单</string>
+    <string name="my_post">我的帖子</string>
+    <string name="title_my_collect">我的收藏夹</string>
+    <string name="detection_record">检测记录</string>
+    <string name="my_health_plan">我的健康计划</string>
+    <string name="设置">设置</string>
+    <string name="head">头像</string>
+    <string name="user_name">昵称</string>
+    <string name="bind_email">绑定邮箱</string>
+    <string name="email">邮箱</string>
+    <string name="info_email">绑定邮箱</string>
+    <string name="hint_name">请输入您的昵称</string>
+    <string name="hint_email">请输入您的邮箱号</string>
+    <string name="change_pwd">修改密码</string>
+    <string name="clear_pic_cache">清除图片缓存</string>
+    <string name="remind_set">提醒设置</string>
+    <string name="health_remind_time">21天健康计划提醒时间</string>
+    <string name="set_igene_pwd">设置基因报告查看密码</string>
+    <string name="title_igene_pwd">基因报告查看密码</string>
+    <string name="set_pwd">设置密码</string>
+    <string name="input_pwd">输入查看密码</string>
+    <string name="ple_input_igene_pwd">请输入您的查看密码</string>
+    <string name="find_pwd">忘记密码</string>
+    <string name="about_us">关于我们</string>
+    <string name="option_feedback">意见反馈</string>
+    <string name="customer_phone">客服热线</string>
+    <string name="exti_account">退出当前账号</string>
+    <string name="set">设置</string>
+    <string name="open_pwd">开启密码锁定</string>
+    <string name="sure_pwd">确认密码</string>
+    <string name="check_update">检查更新</string>
+    <string name="about_igene">关于爱基因</string>
+    <string name="copyright">Copyright©2011-2015爱基因版权所有</string>
+    <string name="integral_level">积分等级</string>
+    <string name="community_standar">社区规范</string>
+    <string name="terms_service">服务条款</string>
+    <string name="privacy_policy">隐私政策</string>
+    <!-- 健康检测 -->
+    <string name="title_health_appraisal">健康评估</string>
+    <string name="tv_health_all">健康总分</string>
+    <string name="tv_health_detection">后天检测</string>
+    <string name="tv_health_detection_gene">基因检测</string>
+    <string name="tv_fund_result">基因检测报告</string>
+    <string name="hint_fund_email">请输入邮箱地址</string>
+    <string name="title_health_plan">健康计划</string>
+    <string name="tv_detection_result">检测结果</string>
+    <string name="tv_health_branch">分</string>
+    <string name="tv_health_you">您的健康总分打败了全国</string>
+    <string name="tv_health_you_a">万人</string>
+    <string name="tv_detection_detail">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;小主，此“后天测试”是依据中医国家标准开发，虽测试过程繁复，但却能帮助知晓身体情况，洞悉疾病隐患，当常常自检</string>
+    <string name="tv_detection_one">了解自己的体质</string>
+    <string name="tv_detection_two">了解体质与疾病的关系</string>
+    <string name="tv_detection_three">获得个性化调理体质的方案</string>
+    <string name="tv_detection_min">分钟</string>
+    <string name="tv_start_detection">开始测试</string>
+    <string name="tv_left_one">完整全面</string>
+    <string name="tv_left_two">准确度93%</string>
+    <string name="tv_left_three">2000万人测过</string>
+    <string name="tv_right_one">完成速度超快</string>
+    <string name="tv_right_two">准确度53%</string>
+    <string name="tv_detection_zero">0题</string>
+    <string name="tv_number_five">5</string>
+    <string name="tv_number_one">1</string>
+    <string name="tv_number_sixth">/60</string>
+    <string name="tv_degree_risk">风险程度</string>
+    <string name="tv_disease_one">乳腺癌</string>
+    <string name="tv_disease_two">宫颈癌</string>
+    <string name="tv_disease_three">子宫癌</string>
+    <string name="tv_prevent_one">乳腺癌预防</string>
+    <string name="tv_prevent_two">宫颈癌预防</string>
+    <string name="tv_prevent_three">子宫癌预防</string>
+    <string name="tv_choose_a">A.</string>
+    <string name="tv_choose_b">B.</string>
+    <string name="tv_choose_c">C.</string>
+    <string name="tv_choose_d">D.</string>
+    <string name="tv_choose_back">测试还未结束，是否退出？</string>
+    <string name="tv_health_nogood">不良习惯</string>
+    <string name="tv_prevent_plan">计划</string>
+    <string name="tv_prevent_rank">排行</string>
+    <string name="tv_prevent_knowledge">知识</string>
+    <string name="tv_prevent_no">当前没有排行哦</string>
+    <string name="tv_prevent_man">人在进行</string>
+    <string name="tv_health_other">其他部位</string>
+    <string name="tv_no_start">未加入计划</string>
+    <string name="tv_health_plan">加入健康计划</string>
+    <string name="tv_plan_ing">人在进行</string>
+    <string name="tv_health_fist">   	    你还未开始检测，
+   	    \n检测完以下任意一项之后，
+   	    \n就可以查看您的健康总分了哦</string>
+    <string name="tv_health_number">100</string>
+    <string name="tv_health_gotext">去检测</string>
+    <string name="tv_result_send">是否将检测报告发送至我邮箱</string>
+    <string name="tv_result_nobind">您还未绑定邮箱，是否现在就去绑定</string>
+    <string name="tv_health_completion">视频完成</string>
+    <string name="tv_fund_uncheck">未检测</string>
+    <string name="tv_fund_checked">已检测</string>
+    <string name="tv_health_lock">完成上一个训练才能解锁下一个训练！</string>
+    <string name="tv_result_reminda">温馨提示：精确结果，推荐使用5分钟测试或基因检测</string>
+    <string name="tv_result_remindb">温馨提示：精确结果，推荐使用基因检测</string>
+    <string name="tv_result_five">5分钟测试</string>
+    <string name="tv_video_back">现在退出将不能保存训练进度及数据，确认要结束训练吗？</string>
+    <string name="tv_video_sure">确认结束</string>
+    <string name="tv_video_cancel">继续训练</string>
+
+    <!-- 帖子 -->
+    <string name="hot_search_word">搜索的帖子名称</string>
+    <string name="hot_search_hot">热门搜索词</string>
+    <string name="topic_name">帖子名称</string>
+    <string name="topic_post">发表帖子</string>
+    <string name="case_post">发表案例</string>
+    <string name="case_name">案例</string>
+    <string name="tv_case_detail">案例详情</string>
+    <string name="topic_info">帖子详情</string>
+    <string name="tv_topic_delete">确定要删除帖子吗？</string>
+    <string name="tv_mycollect_delete">确定要删除收藏吗？</string>
+    <string name="tv_completion_share">立即分享</string>
+
+    <!-- 积分商城 -->
+    <string name="title_integral_mall">积分商城 </string>
+    <string name="goods_collect">商品收藏 </string>
+    <string name="goods_address">收货地址 </string>
+    <string name="goods_cartshop">购物车 </string>
+    <string name="goods_order">我的订单 </string>
+    <string name="money_symbol">￥</string>
+    <string name="tv_number_zero">0</string>
+    <string name="tv_order_cancel">您确定要取消订单吗？</string>
+    <string name="tv_order_delete">您确定要删除此订单吗？</string>
+
+    <!-- 商品详情 -->
+    <string name="title_product_detail">商品详情</string>
+    <string name="title_product_integral">积分</string>
+    <string name="title_product_evaluation">评价</string>
+    <string name="tv_product_num">请选择产品数量</string>
+    <string name="tv_product_numover">库存数量不足！</string>
+    <string name="tv_product_message">买家留言：</string>
+    <string name="hint_order_message">请输入买家留言</string>
+    <string name="tv_order_setaddress">请设置收货地址</string>
+    <string name="tv_order_message">麻烦尽快发货，谢谢！</string>
+
+    <!-- 确认订单 -->
+    <string name="title_order_sure">确认订单</string>
+
+    <!-- 购物车 -->
+    <string name="title_mall_cart">购物车</string>
+    <string name="tv_cart_sub">受不了了，宝贝不能再减少了哦！</string>
+    <string name="tv_cart_nulla">购物车空空的</string>
+    <string name="tv_cart_nullb">快去装满吧</string>
+    <string name="tv_cart_nullc">去逛逛</string>
+
+    <!-- 在线支付 -->
+    <string name="title_pay_mall">付款</string>
+    <string name="title_pay_mall_success">付款成功</string>
+    <string name="tv_pay_intager">确认兑换，兑换后不可更改</string>
+
+    <!-- 收货地址 -->
+    <string name="title_mall_address">收货地址</string>
+    <string name="title_mall_add_address">添加收货</string>
+    <string name="title_mall_edit_address">编辑收货</string>
+    <string name="title_mall_address_name">收货人&#160;&#160;&#160;&#160;&#160;&#160;</string>
+    <string name="title_mall_address_phone">手机号&#160;&#160;&#160;&#160;&#160;&#160;</string>
+    <string name="title_mall_address_in">所在地区&#160;&#160;</string>
+    <string name="title_mall_address_detail">详细地址&#160;&#160;</string>
+    <string name="title_mall_address_area">选择地区</string>
+    <string name="title_mall_address_sure">完成</string>
+    <string name="tv_mall_delete">是否删除收货地址？</string>
+    <string name="tv_mall_default">是否设置为默认收货地址？</string>
+    <string name="tv_address_default">默认地址</string>
+    <string name="hint_address_man">请输入收货人</string>
+    <string name="hint_address_phone">请输入手机号码</string>
+    <string name="hint_address_area">请选择所在地区</string>
+    <string name="hint_address_true">请输入详细收货地址</string>
+
+    <!-- 商品收藏 -->
+    <string name="title_mall_collect">商品收藏</string>
+    <string name="tv_collect_edit">编辑</string>
+    <string name="tv_collect_over">完成</string>
+    <string name="tv_collect_delete">删除</string>
+    <string name="tv_collect_choose">全选</string>
+    <string name="tv_cart_all">合计：</string>
+    <string name="tv_cart_count">结算</string>
+
+    <!-- xlistview lsq -->
+    <string name="nav_desc">nav_desc</string>
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载&#8230;</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+    <string name="xlistview_justnow">刚刚</string>
+
+    <!-- 我的订单 -->
+    <string name="title_mall_order">我的订单</string>
+    <string name="title_mall_order_detail">订单详情</string>
+    <string name="title_mall_order_logistics">查物流</string>
+    <string name="title_product_no_comment">待评价商品</string>
+    <string name="tv_product_man">人</string>
+    <string name="tv_logistics_no">暂未获取到物流跟踪信息哦</string>
+
+    <!-- 爱家人 -->
+    <string name="message">消息</string>
+    <string name="message_train">训练消息</string>
+    <string name="message_order">订单消息</string>
+    <string name="message_notification">系统消息</string>
+    <string name="search">搜索</string>
+    <string name="search_result">搜索结果</string>
+    <string name="my_integaral">"我的积分:"</string>
+    <string name="name">姓名</string>
+    <string name="please_input_name">请输入姓名</string>
+    <string name="relation">关系</string>
+    <string name="please_input_relation">请输入关系</string>
+    <string name="sex">性别</string>
+    <string name="birth">生日</string>
+    <string name="place">所在地</string>
+    <string name="disease">慢性病</string>
+    <string name="remark">备注</string>
+    <string name="please_input_remark">请填写备注信息</string>
+    <string name="add_framily">添加成员</string>
+    <string name="i_say_one">我也来说一句</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="index_Search">请输入您需要的搜索信息</string>
+    <string name="messageAll">全部</string>
+    <string name="messageMessage">消息</string>
+    <string name="messageNotic">公告</string>
+    <!-- 我  页面 -->
+    <string name="my_demand">我的需求</string>
+    <string name="my_collect">我的收藏</string>
+    <string name="my_attent">我的关注</string>
+    <string name="my_kefu_tel">客服电话</string>
+    <string name="my_setting">设置</string>
+    <string name="my_feedback">意见反馈</string>
+
+    <!-- 发需求 -->
+    <string name="demand_buySecondHouse">我要买房</string>
+    <string name="demand_SellSecondHouse">发布出售</string>
+    <string name="demand_wantRend">我要租房</string>
+    <string name="demand_toRend">发布出租</string>
+    <string name="title_activity_buy_second_house">BuySecondHouseActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <!-- hint -->
+    <string name="secondhouseseach">请输入关键词</string>
+    <string name="title_activity_di_tu_zhao_fang">DiTuZhaoFangActivity</string>
+    <string name="title_activity_index_di_tu_search">IndexDiTuSearchActivity</string>
+    <string name="title_activity_shang_ye_di_chan">ShangYeDiChanActivity</string>
+    <string name="title_activity_chan_quan_yan_zheng">ChanQuanYanZhengActivity</string>
+    <string name="title_activity_index_fang_chan_result">IndexFangChanResultActivity</string>
+    <string name="title_activity_about_us">AboutUsActivity</string>
+    <string name="title_activity_contact_us">ContactUsActivity</string>
+    <string name="title_activity_fankui_yijian">FankuiYijianActivity</string>
+    <string name="title_activity_calculator">CalculatorActivity</string>
+    <string name="title_activity_forget_psw">ForgetPSWActivity</string>
+    <string name="title_activity_di_tu_dao_hang">DiTuDaoHangActivity</string>
+    <string name="title_activity_comment">CommentActivity</string>
+    <string name="title_activity_cancle_demand">CancleDemandActivity</string>
+    <string name="title_activity_xin_fangxq">XinFangxqActivity</string>
+    <string name="title_activity_hu_xing_show">HuXingShowActivity</string>
+    <string name="title_activity_lou_pan_camera">LouPanCameraActivity</string>
+    <string name="tv_business_a">计算方式：</string>
+    <string name="tv_business_b">单价：</string>
+    <string name="tv_business_c">元/平方米</string>
+    <string name="tv_business_d">面积：</string>
+    <string name="tv_business_e">平方米&#160;&#160;&#160;&#160;</string>
+    <string name="tv_business_f">按揭成数：</string>
+    <string name="tv_business_s">首期还款：</string>
+    <string name="tv_business_g">按揭年数：</string>
+    <string name="tv_business_1">首月还款：</string>
+    <string name="tv_business_t">末月还款：</string>
+    <string name="tv_business_h">银行利率：</string>
+    <string name="tv_business_i">还款方式：</string>
+    <string name="tv_business_j">每月还款额固定，所还总额利息较多，适合收入稳定者</string>
+    <string name="tv_business_count">开始计算</string>
+    <string name="tv_business_r">房屋总价：</string>
+    <string name="tv_business_k">贷款总额：</string>
+    <string name="tv_business_l">还款总额：</string>
+    <string name="tv_business_m">支付利息：</string>
+    <string name="tv_business_n">月均还款：</string>
+    <string name="tv_business_o">0元</string>
+    <string name="tv_business_p">计算结果</string>
+    <string name="tv_business_q">%</string>
+    <string name="tv_business_u">设置</string>
+    <string name="tv_business_v">万元</string>
+    <string name="tv_business_w">总价计算</string>
+    <string name="tv_business_x">单价计算</string>
+    <string name="tv_business_y">等额本息</string>
+    <string name="tv_business_z">等额本金</string>
+    <string name="tv_business_moneys">商业贷款总额：</string>
+    <string name="tv_business_money">公积金贷款总额：</string>
+    <string name="et_business_a">0</string>
+    <string name="business_promt">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;以购买的产权住房为抵押与银行进行借贷，比公积金贷款还的多，最长开款年限３０年，且还款年限不得超过６５岁。</string>
+    <string name="benjin_promt">每月的还款额递减，所还总利息较低，前期还款额较大。</string>
+
+    <!-- 税费计算及公积金贷款 -->
+    <string name="home_loan_calculator">房贷计算器</string>
+    <string name="base">公积金缴存基数</string>
+    <string name="loaner_one">贷款人之一</string>
+    <string name="loaner_two">贷款人之二</string>
+    <string name="hint_base">请输入缴存基数</string>
+    <string name="balance">公积金账户余额</string>
+    <string name="hint_balance"></string>
+    <string name="fund_year">贷款年限</string>
+    <string name="fund_adjust">流动性调整基数</string>
+    <string name="hint_year"></string>
+    <string name="tv_business_tab">商业贷款</string>
+    <string name="tv_fund_tab">公积金贷款</string>
+    <string name="tv_combination_tab">组合贷款</string>
+    <string name="benxi_promt">每月的还款额固定，所还总利息比较多，适合收入稳定者。</string>
+    <string name="combination_promt">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;公积金贷款不足支付购房款时，不足部分可向银行申请商业性贷款，两种贷款执行各自的贷款利率，最长贷款年限３０年。</string>
+    <string name="title_activity_tu_di_gong">TuDiGongActivity</string>
+    <string name="title_activity_di_tu_search">DiTuSearchActivity</string>
+    <string name="title_activity_chu_zu">ChuZuActivity</string>
+    <string name="title_activity_ni_cheng">NiChengActivity</string>
+    <string name="title_activity_xiao_qu">XiaoQuActivity</string>
+    <string name="title_activity_she_qu_zhuan_jia">SheQuZhuanJiaActivity</string>
+    <string name="title_activity_fu_jin_fang">FuJinFangActivity</string>
+    <string name="title_activity_suo_shu_ji_gou">SuoShuJiGouActivity</string>
+    <string name="title_activity_fu_wu_ping_jia">FuWuPingJiaActivity</string>
+    <string name="title_activity_guang_gao">GuangGaoActivity</string>
+    <string name="title_activity_wide_price">WidePriceActivity</string>
+
+    <!-- 弹窗数据 -->
+    <string-array name="pop_quyu1">
+        <item>不限</item>
+        <item>思明</item>
+        <item>湖里</item>
+        <item>海沧</item>
+        <item>集美</item>
+        <item>同安</item>
+        <item>翔安</item>
+    </string-array>
+    <string-array name="pop_quyu2">
+        <item>不限</item>
+        <item>火车站</item>
+        <item>松柏</item>
+        <item>湖滨</item>
+        <item>莲坂</item>
+        <item>莲前</item>
+        <item>厦禾路</item>
+    </string-array>
+    <string-array name="pop_broker_housetype">
+        <item>不限</item>
+        <item>住宅</item>
+        <item>商铺</item>
+        <item>写字楼</item>
+        <item>厂房</item>
+    </string-array>
+    <string-array name="pop_quyu3">
+        <item>更多</item>
+        <item>东渡</item>
+        <item>松柏</item>
+        <item>鼓浪屿</item>
+        <item>禾祥西路</item>
+    </string-array>
+    <string-array name="pop_siming">
+        <item>思明全部</item>
+        <item>白鹭洲</item>
+        <item>厦大</item>
+        <item>鼓浪屿</item>
+        <item>祥和西</item>
+        <item>会展中心</item>
+        <item>莲花</item>
+    </string-array>
+    <string-array name="pop_huli">
+        <item>湖里全部</item>
+        <item>SM商圈</item>
+        <item>保税区</item>
+        <item>东渡</item>
+        <item>大唐</item>
+        <item>枋湖</item>
+        <item>翔鹭</item>
+    </string-array>
+    <string-array name="pop_xiangan">
+        <item>翔安全部</item>
+        <item>南部新城</item>
+        <item>马翔</item>
+        <item>翔安新城</item>
+        <item>大嶝岛</item>
+    </string-array>
+    <string-array name="pop_totalprice">
+        <item>不限</item>
+        <item>50万以下</item>
+        <item>50-100万</item>
+        <item>100-200万</item>
+        <item>200-500万</item>
+        <item>500-1000万</item>
+    </string-array>
+    <string-array name="pop_fangxing">
+        <item>不限</item>
+        <item>一室</item>
+        <item>二室</item>
+        <item>三室</item>
+        <item>四室</item>
+        <item>四室以上</item>
+    </string-array>
+    <string-array name="pop_leixing">
+        <item>不限</item>
+        <item>住宅</item>
+        <item>商铺</item>
+        <item>写字楼</item>
+        <item>厂房</item>
+    </string-array>
+    <string-array name="pop_paixu">
+        <item>积分排序</item>
+        <item>房源数由高到低</item>
+        <item>房源数由低到高</item>
+        <item>成交量由高到低</item>
+        <item>成交量由低到高</item>
+        <item>好评率由高到低</item>
+        <item>好评率由低到高 </item>
+    </string-array>
+    <string-array name="pop_fujin">
+        <item>1000米以内</item>
+        <item>2000米以内</item>
+        <item>3000米以内</item>
+    </string-array>
+    <string-array name="pop_junjia">
+        <item>不限</item>
+        <item>2万以下</item>
+        <item>2-3万</item>
+        <item>3-4万</item>
+        <item>4-5万</item>
+        <item>5-6万</item>
+        <item>6-8万</item>
+        <item>8万以上</item>
+    </string-array>
+    <string-array name="pop_xiaoqu_tese">
+        <item>不限</item>
+        <item>BRT沿线</item>
+        <item>复式</item>
+        <item>小户型</item>
+        <item>低总价</item>
+        <item>学校附近</item>
+        <item>商住两用</item>
+        <item>地铁房</item>
+        <item>满五唯一</item>
+        <item>普宅满2年</item>
+    </string-array>
+    <string-array name="pop_mapsecond_tese">
+        <item>不限</item>
+        <item>学校附近</item>
+        <item>商住两用</item>
+        <item>地铁房</item>
+        <item>复式</item>
+        <item>BRT沿线</item>
+        <item>小户型</item>
+        <item>低总价</item>
+        <item>普宅满2年</item>
+        <item>满五唯一</item>
+        <item>一梯两户</item>
+        <item>婚房</item>
+        <item>养老</item>
+        <item>投资</item>
+        <item>交通便利</item>
+    </string-array>
+    <string-array name="pop_maprent_tese">
+        <item>不限</item>
+        <item>学校附近</item>
+        <item>海景房</item>
+        <item>地铁房</item>
+        <item>精装修</item>
+        <item>BRT沿线</item>
+        <item>毛坯房</item>
+        <item>豪宅</item>
+        <item>一梯两户</item>
+        <item>交通便利</item>
+    </string-array>
+    <string-array name="pop_xinfang_tese">
+        <item>不限</item>
+        <item>BRT沿线</item>
+        <item>复式</item>
+        <item>小户型</item>
+        <item>低总价</item>
+    </string-array>
+    <string-array name="pop_mapxinfang_tese">
+        <item>不限</item>
+        <item>BRT沿线</item>
+        <item>复式</item>
+        <item>小户型</item>
+        <item>低总价</item>
+        <item>学区房</item>
+        <item>商住两用</item>
+        <item>地铁房</item>
+        <item>满五唯一</item>
+        <item>普宅满2年</item>
+    </string-array>
+    <string-array name="pop_mianji">
+        <item>不限</item>
+        <item>50平以下</item>
+        <item>50-70平</item>
+        <item>70-90平</item>
+        <item>90-120平</item>
+        <item>120平以上</item>
+    </string-array>
+    <string-array name="pop_xiezilou">
+        <item>商铺出租</item>
+        <item>商铺出售</item>
+        <item>厂房出租</item>
+        <item>厂房出售</item>
+        <item>写字楼出租</item>
+        <item>写字楼出售</item>
+        <item>车位出租</item>
+        <item>车位出售</item>
+    </string-array>
+    <string-array name="pop_rentprice">
+        <item>不限</item>
+        <item>2000元以下</item>
+        <item>2000-3000元</item>
+        <item>3000-4000元</item>
+        <item>4000-5000元</item>
+        <item>5000-8000元</item>
+        <item>8000以上</item>
+    </string-array>
+    <string-array name="pop_secondhouse_totalprice">
+        <item>不限</item>
+        <item>100万以下</item>
+        <item>100-200万</item>
+        <item>200-300万</item>
+        <item>300-400万</item>
+        <item>400-600万</item>
+        <item>600-1000万</item>
+        <item>1000万以上</item>
+    </string-array>
+    <string-array name="pop_area">
+        <item>不限</item>
+        <item>100㎡以下</item>
+        <item>100-150㎡</item>
+        <item>150-200㎡</item>
+        <item>200-300㎡</item>
+        <item>300㎡以上</item>
+    </string-array>
+    <string-array name="pop_sumprice">
+        <item>不限</item>
+        <item>200万以下</item>
+        <item>200-300万</item>
+        <item>300-400万</item>
+        <item>400-500万</item>
+        <item>500万以上</item>
+    </string-array>
+    <string-array name="pop_wantprice">
+        <item>2000元/月以下</item>
+        <item>2000-3000元/月</item>
+        <item>3000-4000元/月</item>
+        <item>4000-5000元/月</item>
+        <item>5000元/月以上</item>
+    </string-array>
+
+    <string name="title_activity_qiu_gou_xin_fang">QiuGouXinFangActivity</string>
+    <string name="title_activity_shang_ye_di_chan_info">ShangYeDiChanInfoActivity</string>
+    <string name="title_activity_chang_fang_detail">ChangFangDetailActivity</string>
+    <string name="title_activity_che_wei">CheWeiActivity</string>
+    <string name="title_activity_xie_zi_lou">XieZiLouActivity</string>
+
+    <string-array name="shangye_area_more">
+        <item>不限</item>
+        <item>50-70平</item>
+        <item>70-90平</item>
+        <item>90-120平</item>
+        <item>120-150平</item>
+        <item>150平以上</item>
+    </string-array>
+    <string-array name="shangye_rental_more">
+        <item>不限</item>
+        <item>2000元以下</item>
+        <item>2000-3000元</item>
+        <item>3000-4000元</item>
+        <item>4000-5000元</item>
+        <item>5000-8000元</item>
+        <item>8000元以上</item>
+    </string-array>
+    <string-array name="shangye_shoujia_more">
+        <item>不限</item>
+        <item>100万以下</item>
+        <item>100-200万</item>
+        <item>200-300万</item>
+        <item>300-400万</item>
+        <item>400-600万</item>
+        <item>600-1000万</item>
+        <item>1000万以上</item>
+    </string-array>
+    <string-array name="shangye_cheweiprice_more">
+        <item>不限</item>
+        <item>500元以下</item>
+        <item>500-1000</item>
+        <item>1000-1500</item>
+        <item>1500-2000</item>
+        <item>2000-2500</item>
+        <item>2500以上</item>
+    </string-array>
+    <string-array name="shangye_classify_more">
+        <item>不限</item>
+        <item>临街商铺</item>
+        <item>小区商铺</item>
+        <item>商场商铺</item>
+    </string-array>
+    <string-array name="shangye_decoreate_more">
+        <item>不限</item>
+        <item>豪华装修</item>
+        <item>精装修</item>
+        <item>中装修</item>
+        <item>简装修</item>
+        <item>毛坯</item>
+        <item>普通装修</item>
+    </string-array>
+    <string-array name="shangye_decoreate_mored">
+        <item>不限</item>
+        <item>豪华装修</item>
+        <item>精装修</item>
+        <item>简装修</item>
+        <item>中装修</item>
+        <item>毛坯</item>
+        <item>普通装修</item>
+    </string-array>
+    <string-array name="shangye_houseage_more">
+        <item>不限</item>
+        <item>2年以内</item>
+        <item>2-5年</item>
+        <item>5-10年</item>
+        <item>10年以上</item>
+    </string-array>
+    <string-array name="shangye_floornum_more">
+        <item>不限</item>
+        <item>地下</item>
+        <item>1层</item>
+        <item>6层以下</item>
+        <item>6-12层</item>
+        <item>12层以上</item>
+    </string-array>
+    <string-array name="shangye_downpayment_more">
+        <item>不限</item>
+        <item>50万以下</item>
+        <item>50-100万</item>
+        <item>100-150万</item>
+        <item>150-300万</item>
+        <item>300万以上</item>
+    </string-array>
+    <string-array name="map_downpayment_more">
+        <item>不限</item>
+        <item>50万以下</item>
+        <item>50-80万</item>
+        <item>80-100万</item>
+        <item>100-130万</item>
+        <item>130万以上</item>
+    </string-array>
+    <string-array name="shangye_jibie_more">
+        <item>不限</item>
+        <item>甲级</item>
+        <item>乙级</item>
+        <item>顶级</item>
+        <item>丙级</item>
+    </string-array>
+    <string-array name="shangye_weizhi_more">
+        <item>不限</item>
+        <item>地上</item>
+        <item>地下一层</item>
+        <item>地下二层</item>
+        <item>地下三层</item>
+    </string-array>
+    <string-array name="shangye_tese_more">
+        <item>不限</item>
+        <item>带卷帘门</item>
+        <item>子母车位</item>
+        <item>电梯旁</item>
+    </string-array>
+    <string-array name="shangye_cheweiare_more">
+        <item>不限</item>
+        <item>20平以下</item>
+        <item>20-25平</item>
+        <item>25-30平</item>
+        <item>30-35平</item>
+        <item>35-40平</item>
+        <item>40平以上</item>
+    </string-array>
+    <string-array name="zufang_orientation_more">
+        <item>不限</item>
+        <item>东</item>
+        <item>南</item>
+        <item>西</item>
+        <item>北</item>
+        <item>东南</item>
+        <item>东北</item>
+        <item>西南</item>
+        <item>西北</item>
+        <item>南北</item>
+        <item>东西</item>
+    </string-array>
+    <string-array name="map_orientation_more">
+        <item>不限</item>
+        <item>东</item>
+        <item>南</item>
+        <item>西</item>
+        <item>北</item>
+        <item>东南</item>
+        <item>东北</item>
+        <item>西南</item>
+        <item>西北</item>
+        <item>南北</item>
+        <item>东西</item>
+    </string-array>
+    <string-array name="secondhouse_authhouseres_more">
+        <item>不限</item>
+        <item>全部房源</item>
+        <item>认证房源</item>
+        <item>非认证房源</item>
+    </string-array>
+
+    <string name="title_activity_search_arealist">SearchArealistActivity</string>
+    <string name="title_activity_ji_gou_house_res">JiGouHouseResActivity</string>
+    <string name="title_activity_gong_gao">GongGaoActivity</string>
+    <string name="title_activity_image">ImageActivity</string>
+    <string name="title_activity_xiu_gai_mi_ma">XiuGaiMiMaActivity</string>
+    <string name="searchempty">抱歉！没有找到相关内容请重新搜索</string>
+    <string name="title_activity_community_map">CommunityMapActivity</string>
+    <string name="nopic">暂无图片</string>
+    <string name="rental">租        金</string>
+    <string name="aboutus">\t\t厦门房产之窗是由厦门市房地产中介行业协会开发建设，以房地产经纪行业房源信息发布为核心的公益性网络服务平台，承蒙厦门市国土房管局鼎力支持，“厦门房产之窗”与“厦门网上房地产“系统对接，为客户提供真实的房源信息。</string>
+    <string name="title_activity_around_sec_house">AroundSecHouseActivity</string>
+    <string name="psw_rule">请输入4-20位数字、字母组合密码</string>
+
+</resources>

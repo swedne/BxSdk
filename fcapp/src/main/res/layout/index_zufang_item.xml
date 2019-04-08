@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <RelativeLayout
+        android:id="@+id/rl_secondhandhouse02"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/list_item_selector"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/img_newhousepic"
+            android:layout_alignTop="@+id/img_newhousepic"
+            android:layout_toRightOf="@+id/img_newhousepic"
+            android:orientation="vertical"
+            android:paddingLeft="10dp" >
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@+id/img_newhousepic"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="阳光城菲丽湾"
+                android:textColor="@color/info_text_color"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:id="@+id/ll"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tv_title"
+                android:layout_below="@+id/tv_title"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/ll_housetype"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                   >
+
+                    <TextView
+                        android:id="@+id/tv_housetype"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/text_color"
+                        android:textSize="12sp" />
+                    
+                    <View 
+                        android:layout_width="1dp"
+                        android:layout_height="12dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="6dp"
+                        android:background="@color/text_color"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_berryGG"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/text_color"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/rl_middle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/tv_title"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        android:id="@+id/tv_areaListName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:layout_weight="1"
+                        android:text="两室一厅"
+                        android:textColor="@color/text_color"
+                        android:textSize="12sp" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="12dp" >
+
+                        <TextView
+                            android:id="@+id/tv_rentMoney"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toLeftOf="@+id/txt_unit"
+                            android:text="3000 "
+                            android:textColor="@color/text_red"
+                            android:textSize="@dimen/txt_size_16sp" />
+
+                        <TextView
+                            android:id="@+id/tv_unit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="元/月 "
+                            android:textColor="@color/text_red"
+                            android:textSize="@dimen/txt_size_12sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/img_newhousepic"
+                android:layout_alignLeft="@+id/ll"
+                android:layout_below="@+id/ll"
+                android:gravity="bottom" >
+
+                <LinearLayout
+                    android:id="@+id/ll_special"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_rent_berry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="90平方米"
+                    android:visibility="gone"
+                    android:textColor="@color/text_color"
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/img_newhousepic"
+            android:layout_width="86dp"
+            android:layout_height="86dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="5dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/wutu" />
+    </RelativeLayout>
+
+</LinearLayout>

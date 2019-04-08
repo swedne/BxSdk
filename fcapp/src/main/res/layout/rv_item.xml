@@ -1,0 +1,33 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingRight="15dp" >
+
+    <ImageView
+        android:id="@+id/img_huXing"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/wutu" />
+
+    <TextView
+        android:id="@+id/tv_huXing"
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_huXing"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="一居室"
+        android:textColor="@color/info_text_color" />
+
+    <ImageView
+        android:id="@+id/img_renzheng"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/img_huXing"
+        android:layout_alignTop="@+id/img_huXing"
+        android:src="@drawable/renzheng"
+        android:visibility="gone" />
+
+</RelativeLayout>

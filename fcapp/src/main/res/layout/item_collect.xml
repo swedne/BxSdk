@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <RelativeLayout
+        android:id="@+id/rl_secondhandhouse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" >
+
+        <RelativeLayout
+            android:id="@+id/rl_img"
+            android:layout_width="86dp"
+            android:layout_height="86dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="5dp" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="86dp"
+                android:layout_height="86dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/wutu" />
+
+            <TextView
+                android:id="@+id/tv_islist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@color/gray_deep"
+                android:padding="2dp"
+                android:text="已下架"
+                android:textColor="@color/white"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_collect_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/rl_img"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="厦门房产之窗厦门房产之窗厦门房产之窗厦门房产之窗厦门房产之窗厦门房产之窗厦门房产之窗厦门房产之窗厦门房产之窗厦门房产之窗"
+            android:textColor="@color/info_text_color"
+            android:textSize="@dimen/txt_size_14sp" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/rl_img"
+            android:layout_alignLeft="@+id/tv_collect_title"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_collect_areanum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="100㎡ "
+                android:textColor="@color/info_text_color"
+                android:textSize="@dimen/txt_size_14sp" />
+
+            <TextView
+                android:id="@+id/tv_collect_houseTypeName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="6dp"
+                android:background="@color/title_bg"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="住宅"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_collect_title"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" >
+
+            <TextView
+                android:id="@+id/tv_collect_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/txt_gray"
+                android:textSize="@dimen/txt_size_12sp" />
+
+            <TextView
+                android:id="@+id/tv_collect_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="500"
+                android:textColor="@color/text_red"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="12dp"
+                android:text="万"
+                android:textColor="@color/text_red"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="86dp"
+            android:layout_marginLeft="5dp"
+            android:gravity="right" >
+
+            <ImageView
+                android:id="@+id/img_renzheng_web"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginRight="70dp"
+                android:src="@drawable/weborwx_rzfy"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/img_weirenzheng_web"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginRight="70dp"
+                android:src="@drawable/weborwx_wrzfy"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_secondhandhouse02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/rl_secondhandhouse"
+        android:background="@color/white"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:id="@+id/tv_collect_newhousetitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/img_newhousepic"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="阳光城菲丽湾"
+            android:textColor="@color/info_text_color"
+            android:textSize="14dp" />
+
+        <LinearLayout
+            android:id="@+id/ll_housespecialname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/img_newhousepic"
+            android:layout_alignLeft="@+id/rl_middle"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/rl_middle"
+            android:gravity="bottom"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rl_middle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_collect_newhousetitle"
+            android:layout_below="@+id/tv_collect_newhousetitle"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/tv_newhouse_businessname"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="两室一厅"
+                android:textColor="@color/txt_gray"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3000"
+                android:textColor="@color/text_red"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="12dp"
+                android:text="元/㎡ "
+                android:textColor="@color/text_red"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/img_newhousepic"
+            android:layout_width="86dp"
+            android:layout_height="86dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/wutu" />
+    </RelativeLayout>
+
+</RelativeLayout>

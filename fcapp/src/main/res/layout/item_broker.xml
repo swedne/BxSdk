@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="6dp"
+    android:paddingLeft="6dp"
+    android:paddingTop="6dp" >
+
+    <ImageView
+        android:id="@+id/img_broker"
+        android:layout_width="94dp"
+        android:layout_height="120dp"
+        android:background="@drawable/wutu"
+        android:scaleType="fitXY" />
+
+    <ImageView
+        android:id="@+id/img_renzheng"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/img_huXing"
+        android:layout_alignTop="@+id/img_huXing"
+        android:src="@drawable/renzheng"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_broker"
+        android:layout_width="94dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_broker"
+        android:layout_marginTop="6dp"
+        android:gravity="center"
+        android:text="张三"
+        android:textColor="@color/info_text_color" />
+
+</RelativeLayout>

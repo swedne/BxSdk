@@ -1,0 +1,218 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray"
+    android:fitsSystemWindows="true" >
+
+    <include
+        android:id="@+id/include1"
+        layout="@layout/title_base" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/include1"
+        android:layout_marginBottom="10dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="4dp"
+        android:paddingTop="8dp" >
+
+        <ImageView
+            android:id="@+id/img_broker"
+            android:layout_width="90dp"
+            android:layout_height="120dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/wutu"
+            android:scaleType="fitXY" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp" >
+
+            <TextView
+                android:id="@+id/tv_view_demand_detail_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/linearLayout1"
+                android:layout_alignParentTop="true"
+                android:text="李丽"
+                android:textColor="@color/txt_black_deep"
+                android:textSize="@dimen/txt_size_18sp" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_view_demand_detail_name"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="12dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_view_demand_detail_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignTop="@+id/tv_view_demand_detail_company"
+                    android:text="莲坂"
+                    android:textColor="@color/txt_black_thin" />
+
+                <TextView
+                    android:id="@+id/line"
+                    android:layout_width="1dp"
+                    android:layout_height="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/gray" />
+
+                <TextView
+                    android:id="@+id/tv_view_demand_detail_leavel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tv_view_demand_detail_address"
+                    android:layout_alignBottom="@+id/tv_view_demand_detail_address"
+                    android:layout_toRightOf="@+id/tv_view_demand_detail_phone"
+                    android:text="社区专家"
+                    android:textColor="@color/txt_black_thin" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_view_demand_detail_company"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/linearLayout1"
+                android:layout_below="@+id/linearLayout1"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_view_demand_detail_company01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="富山花园、富山花园、富山花园"
+                    android:textColor="@color/txt_black_thin" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_skill"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/ll_view_demand_detail_company"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/ll_view_demand_detail_company"
+                android:gravity="bottom"
+                android:orientation="horizontal" >
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout2"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="房屋信息真实度"
+                android:textColor="@color/txt_black_midle" />
+
+            <com.zorasun.fangchanzhichuang.general.widget.RatingBarView
+                android:id="@+id/ratingBarGoods1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                app:starCount="5"
+                app:starEmpty="@drawable/xingxing_n"
+                app:starFill="@drawable/xingxing_p"
+                app:starImageSize="25dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="服务态度满意度"
+                android:textColor="@color/txt_black_midle" />
+
+            <com.zorasun.fangchanzhichuang.general.widget.RatingBarView
+                android:id="@+id/ratingBarGoods2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                app:starCount="5"
+                app:starEmpty="@drawable/xingxing_n"
+                app:starFill="@drawable/xingxing_p"
+                app:starImageSize="25dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="业务水平专业度"
+                android:textColor="@color/txt_black_midle" />
+
+            <com.zorasun.fangchanzhichuang.general.widget.RatingBarView
+                android:id="@+id/ratingBarGoods3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                app:starCount="5"
+                app:starEmpty="@drawable/xingxing_n"
+                app:starFill="@drawable/xingxing_p"
+                app:starImageSize="25dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/et_content"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/linearLayout3"
+        android:layout_marginTop="18dp"
+        android:background="@color/white"
+        android:gravity="top"
+        android:hint="您好！请输入您对经纪人的评价"
+        android:padding="12dp"
+        android:textColor="@color/txt_black_deep" >
+    </EditText>
+
+</RelativeLayout>

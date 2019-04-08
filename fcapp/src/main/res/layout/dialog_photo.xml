@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/outter"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#c0c0c0c0" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/dialog_photo_return1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/bg_gray" >
+
+        <TextView
+            android:id="@+id/dialog_photo_takephotos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dialog_photo_up"
+            android:gravity="center"
+            android:padding="12dp"
+            android:text="拍照"
+            android:textColor="@color/dialog_text_color"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/dialog_photo_di"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dialog_photo_takephotos"
+            android:background="@drawable/di_tuoianshangchuan"
+            android:contentDescription="@string/app_name" />
+
+        <TextView
+            android:id="@+id/dialog_photo_benjiphots"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dialog_photo_di"
+            android:background="@drawable/dialog_photo_down"
+            android:gravity="center"
+            android:padding="12dp"
+            android:text="从手机相册选择"
+            android:textColor="@color/dialog_text_color"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/dialog_photo_return1"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_above="@+id/dialog_photo_return" />
+
+    <TextView
+        android:id="@+id/dialog_photo_return"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/dialog_photo_cancel"
+        android:gravity="center"
+        android:padding="12dp"
+        android:text="取消"
+        android:textColor="@color/text_red"
+        android:textSize="18sp" />
+
+</RelativeLayout>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/lv_popleft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ListView
+                android:id="@+id/poplist1"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:divider="@color/line_gray"
+                android:dividerHeight="@dimen/line"
+                android:scrollbars="none" >
+            </ListView>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/line0"
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/line_gray" />
+
+        <ScrollView
+            android:id="@+id/sl_popmiddle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <com.zorasun.fangchanzhichuang.general.widget.NoScrollListView
+                    android:id="@+id/poplist2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:divider="@color/line_gray"
+                    android:dividerHeight="@dimen/line"
+                    android:scrollbars="none" >
+                </com.zorasun.fangchanzhichuang.general.widget.NoScrollListView>
+
+                <include layout="@layout/list_footitem_zongjia" />
+            </LinearLayout>
+        </ScrollView>
+
+        <View
+            android:id="@+id/line1"
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/line_gray" />
+
+        <ScrollView
+            android:id="@+id/scrollView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <LinearLayout
+                android:id="@+id/lv_popright"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <include
+                    android:id="@+id/include_zufang_head"
+                    layout="@layout/item_zufang_more"
+                    android:visibility="gone" />
+
+                <include
+                    android:id="@+id/include_shangyedichan_shangpuchuzu_head"
+                    layout="@layout/item_shangyedichan_more"
+                    android:visibility="gone" />
+
+                <include
+                    android:id="@+id/include_secondhouse_head"
+                    layout="@layout/item_secondhouse_more"
+                    android:visibility="gone" />
+
+                <com.zorasun.fangchanzhichuang.general.widget.NoScrollListView
+                    android:id="@+id/poplist3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:divider="@color/line_gray"
+                    android:dividerHeight="@dimen/line"
+                    android:scrollbars="none" >
+                </com.zorasun.fangchanzhichuang.general.widget.NoScrollListView>
+            </LinearLayout>
+        </ScrollView>
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/line_gray" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#c0c0c0c0" />
+
+</LinearLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/info_outter"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_black"
+    android:padding="11dp" >
+
+    <LinearLayout
+        style="@style/theme_w_match"
+        android:layout_above="@+id/pop_share_cancel"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="29dp"
+        android:paddingTop="29dp" >
+
+        <TextView
+            android:id="@+id/tv_share_wx"
+            style="@style/text_style"
+            android:layout_weight="1"
+            android:drawablePadding="7dp"
+            android:drawableTop="@drawable/login_weixin"
+            android:gravity="center"
+            android:text="@string/tv_share_wx"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_share_wx2"
+            style="@style/text_style"
+            android:layout_weight="1"
+            android:drawablePadding="7dp"
+            android:drawableTop="@drawable/ic_share_wxa"
+            android:gravity="center"
+            android:text="@string/tv_share_wx2"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_share_qq"
+            style="@style/text_style"
+            android:layout_weight="1"
+            android:drawablePadding="7dp"
+            android:drawableTop="@drawable/login_qq"
+            android:gravity="center"
+            android:text="@string/tv_share_qq"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/pop_share_cancel"
+        style="@style/text_style"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="11dp"
+        android:background="@drawable/layout_click_bg"
+        android:gravity="center"
+        android:padding="12dp"
+        android:text="@string/camera_cancel"
+        android:textColor="@color/txt_black_deep"
+        android:textSize="17sp" />
+
+</RelativeLayout>

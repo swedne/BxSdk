@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/home_bg"
+    android:fitsSystemWindows="true" >
+
+    <RelativeLayout
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/title_bg" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp" >
+
+            <ImageView
+                android:id="@+id/title_left"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignBottom="@+id/rl_title_search"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/app_name"
+                android:onClick="onClickLeft"
+                android:paddingBottom="@dimen/five"
+                android:paddingLeft="@dimen/fifteen"
+                android:paddingRight="@dimen/five"
+                android:paddingTop="@dimen/five"
+                android:src="@drawable/fanhui_n" />
+
+            <!-- 右边两个按钮的时候使用 -->
+
+            <RelativeLayout
+                android:id="@+id/rl_title_search"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="45dp"
+                android:layout_marginRight="50dp" >
+
+                <EditText
+                    android:id="@+id/et_title_Search"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/rounded_editview"
+                    android:drawableLeft="@drawable/sousuo_blue"
+                    android:drawablePadding="6dp"
+                    android:ems="10"
+                    android:hint="@string/index_Search"
+                    android:paddingLeft="6dp"
+                    android:textColorHint="@color/text_color"
+                    android:textSize="13sp"
+                    android:windowSoftInputMode="stateHidden" />
+
+                <ImageView
+                    android:id="@+id/img_delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="12dp"
+                    android:src="@drawable/close"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <!-- <EditText -->
+            <!-- android:id="@+id/et_title_Search" -->
+            <!-- android:layout_width="match_parent" -->
+            <!-- android:layout_height="30dp" -->
+            <!-- android:layout_alignParentBottom="true" -->
+            <!-- android:layout_marginBottom="4dp" -->
+            <!-- android:layout_marginLeft="45dp" -->
+            <!-- android:layout_marginRight="50dp" -->
+            <!-- android:background="@drawable/rounded_editview" -->
+            <!-- android:drawableLeft="@drawable/sousuo_blue" -->
+            <!-- android:drawablePadding="6dp" -->
+            <!-- android:ems="10" -->
+            <!-- android:hint="@string/index_Search" -->
+            <!-- android:inputType="text" -->
+            <!-- android:paddingLeft="6dp" -->
+            <!-- android:textColorHint="@color/text_color" -->
+            <!-- android:textSize="13sp" > -->
+            <!-- </EditText> -->
+
+            <TextView
+                android:id="@+id/title_right_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignBaseline="@+id/rl_title_search"
+                android:layout_alignBottom="@+id/rl_title_search"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:paddingRight="@dimen/fifteen"
+                android:text="搜索"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_size_14sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ll_bottom"
+        android:layout_below="@+id/title_bar"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/rl_SearchKey"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/search"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/tv_special"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:text="特色标签"
+                    android:textColor="@color/info_text_color" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_special"
+                    android:background="@color/white" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white" >
+
+                        <com.zorasun.fangchanzhichuang.general.widget.NoScrollGridView
+                            android:id="@+id/gv_special"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:listSelector="#00000000"
+                            android:numColumns="3"
+                            android:scrollbars="none" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_history"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_SearchKey"
+                android:padding="16dp"
+                android:text="历史记录"
+                android:textColor="@color/info_text_color" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_history" >
+
+                <LinearLayout
+                    android:id="@+id/rl_SearchHistory"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/search"
+                    android:orientation="vertical" >
+
+                    <com.zorasun.fangchanzhichuang.general.widget.NoScrollListView
+                        android:id="@+id/gv_history"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:divider="@color/home_bg"
+                        android:dividerHeight="1dp"
+                        android:listSelector="#00000000"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="12dp"
+                        android:scrollbars="none" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/home_bg"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="12dp" />
+
+                    <TextView
+                        android:id="@+id/tv_clear"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="清除历史记录"
+                        android:textColor="@color/txt_black_deep" />
+                </LinearLayout>
+            </ScrollView>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <include
+        android:id="@+id/data_error"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title_bar"
+        android:layout_centerHorizontal="true"
+        layout="@layout/include_customview"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/tv_aroundhouse"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/title_bg"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="身边的房源"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_size_16sp" />
+
+        <View
+            android:layout_width="@dimen/line"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/tv_location"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/title_bg"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="地图定位"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_size_16sp" />
+    </LinearLayout>
+
+</RelativeLayout>

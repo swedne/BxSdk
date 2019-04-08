@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_item_selector"
+    android:orientation="vertical"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp"
+    android:paddingTop="6dp" >
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_surface"
+        android:layout_marginTop="4dp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="罗宾森广场精装斯房罗"
+        android:textColor="@color/info_text_color" />
+
+    <ImageView
+        android:id="@+id/img_surface"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignLeft="@+id/tv_title"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/wutu"
+        android:scaleType="fitXY" />
+
+    <ImageView
+        android:id="@+id/img_renzheng"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/img_surface"
+        android:layout_alignTop="@+id/img_surface"
+        android:src="@drawable/renzheng"
+        android:visibility="invisible" />
+
+</RelativeLayout>

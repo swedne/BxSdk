@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="35dp"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll_zufang_bar"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/tv_rent_quyu"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawablePadding="8dp"
+                android:drawableRight="@drawable/sanjiao_n"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:padding="6dp"
+                android:singleLine="true"
+                android:text="区域"
+                android:textColor="@color/txt_gray"
+                android:textSize="@dimen/txt_size_16sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="@dimen/line"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="6dp"
+            android:background="@color/line" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/tv_rent_zujin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="8dp"
+                android:drawableRight="@drawable/sanjiao_n"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:padding="6dp"
+                android:singleLine="true"
+                android:text="租金"
+                android:textColor="@color/txt_gray"
+                android:textSize="@dimen/txt_size_16sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="@dimen/line"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="6dp"
+            android:background="@color/line" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/tv_rent_fangxing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="8dp"
+                android:drawableRight="@drawable/sanjiao_n"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:padding="6dp"
+                android:singleLine="true"
+                android:text="房型"
+                android:textColor="@color/txt_gray"
+                android:textSize="@dimen/txt_size_16sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="@dimen/line"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="6dp"
+            android:background="@color/line" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/tv_rent_gengduo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="8dp"
+                android:drawableRight="@drawable/sanjiao_n"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:padding="6dp"
+                android:singleLine="true"
+                android:text="更多"
+                android:textColor="@color/txt_gray"
+                android:textSize="@dimen/txt_size_16sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

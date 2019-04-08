@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:padding="10dp" >
+
+    <TextView
+        android:id="@+id/tv_area"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="思明区"
+        android:textColor="@color/txt_black_deep"
+        android:textSize="@dimen/txt_size_14sp" />
+
+    <TextView
+        android:id="@+id/tv_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="4dp"
+        android:gravity="bottom"
+        android:text="29532"
+        android:textColor="@color/red_color"
+        android:textSize="@dimen/txt_size_16sp" />
+
+    <TextView
+        android:id="@+id/unit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv_data"
+        android:gravity="bottom"
+        android:text="元/平"
+        android:textColor="@color/txt_black_midle"
+        android:textSize="@dimen/txt_size_12sp" />
+</LinearLayout>
