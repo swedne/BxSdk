@@ -144,7 +144,7 @@ public class IntroActivity extends Base2ActivityNoSwipe {
 	private void intentHome() {
 		Intent intent = new Intent(this, HomeActivity.class);
 		startActivity(intent);
-		overridePendingTransition(R.anim.alpha_into, R.anim.alpha_bigger_dismiss);
+//		overridePendingTransition(R.anim.alpha_into, R.anim.alpha_bigger_dismiss);
 		finish();
 	}
 

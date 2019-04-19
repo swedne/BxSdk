@@ -145,7 +145,7 @@ public class HomeActivity extends BaseFragmentActivityNoSwipe implements OnClick
         setContentView(R.layout.activity_home);
         bindViews();
         afterView();
-        toUpdate();
+//        toUpdate();
     }
 
     private void getFragment() {

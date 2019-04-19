@@ -70,13 +70,13 @@ public class Base2Activity extends Activity {
 	 */
 	public void finish() {
 		super.finish();
-		overridePendingTransition(R.anim.left_in, R.anim.out_to_right3);
+//		overridePendingTransition(R.anim.left_in, R.anim.out_to_right3);
 	}
 
 	@Override
 	public void onBackPressed() {
 		super.onBackPressed();
-		overridePendingTransition(R.anim.in_from_left, R.anim.out_to_right3);
+//		overridePendingTransition(R.anim.in_from_left, R.anim.out_to_right3);
 	}
 
 	public void onClickLeft(View view) {

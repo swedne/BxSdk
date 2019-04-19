@@ -95,7 +95,7 @@ public class WidePriceActivity extends BaseFragmentActivity implements OnClickLi
 		}
 		childView.setBackgroundColor(Color.parseColor("#0089fe"));
 		// } else if (index == 1) {
-		// tvLastMonth.setTextColor(ContextCompat.getColor(this,
+//		 tvLastMonth.setTextColor(ContextCompat.getColor(this,
 		// R.color.title_bg));
 		// childView.setBackgroundColor(ContextCompat.getColor(this,
 		// R.color.title_bg));

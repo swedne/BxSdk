@@ -20,8 +20,9 @@ demoapp1=中国龙内部测试=co.tiangongsky.bxsdk.demoapp1 env=1 type=2 desc=1
 
 // 跳转（未开通） 马甲内容的测试包 测试包  演示使用
 //TODO
-majiassc=好运来=com.fanlizhuanqian.wang env=1 type=2 desc=1.第一版测试 a4447dc0cd78c6fddd3bce startPng=majiasscstart copyLogo=sdk
-
+//majiassc=世外桃源=com.tutu.shiwai.taoyuan env=1 type=2 desc=1.第一版测试 9ecae782b5acd4ebb03b1b99 startPng=majiasscstart copyLogo=sdk
+//测试keymajiassc=世外桃源=com.fanlizhuanqian.wang env=1 type=2 desc=1.第一版测试 a4447dc0cd78c6fddd3bce startPng=majiasscstart copyLogo=sdk
+majiassc=七星生活平台=com.qixing.shenghuo.pingtai env=1 type=2 desc=1.第一版测试 298cddf5178b70d1cbfc0d61 startPng=majiasscstart copyLogo=sdk
 // 扩展模式（jgChannel）！！！！这个是针对极光的多渠道配置的，如果使用这个模式打包,请上报你们的 plist-admin 管理员开启 jg_channel 配置
 // 使用这个形式 在后台开放的时候需要配置 渠道号方可生效(eg:开放xiaomi ，在plistadmin 后台jg_channel写上xiaomi)，如果不使用这个方案 请把 jgChannel=lvmeng;xiaomi;360 删除打包
 //jgChannelmode=马甲时时彩=co.tiangongsky.bxsdk.jgxxxx env=1 type=2 desc=1.第一版测试 d73f39a36e5a3b948ef6fe7b startPng=majiasscstart copyLogo=sdk jgChannel=lvmeng;xiaomi;360

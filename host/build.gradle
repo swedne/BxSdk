@@ -39,7 +39,10 @@ android {
     defaultConfig {
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
-        applicationId "com.fanlizhuanqian.wang"
+//   世外桃源     applicationId "com.tutu.shiwai.taoyuan"
+//   七星
+        applicationId "com.qixing.shenghuo.pingtai"
+//    测试id applicationId "com.fanlizhuanqian.wang"
         versionCode testVersion
         versionName testVersionName
 
@@ -47,13 +50,15 @@ android {
 
         resValue "string", "app_name", "时时彩demo1"
         buildConfigField "String", "hostAppId", "\"\""
-        buildConfigField "String", "APP_NAME", "\"时时彩demo1\""
-
         manifestPlaceholders = [
                 JPUSH_PKGNAME: applicationId,
-                JPUSH_APPKEY : "a4447dc0cd78c6fddd3bce", //JPush上注册的包名对应的// appkey.
+//                JPUSH_APPKEY : "9ecae782b5acd4ebb03b1b99", //房产JPush上注册的包名对应的// appkey.
+                JPUSH_APPKEY : "298cddf5178b70d1cbfc0d61", //七星JPush上注册的包名对应的// appkey.
+//                JPUSH_APPKEY : "a4447dc0cd78c6fddd3bce", //测试key// appkey.
                 JPUSH_CHANNEL: "developer-default", //暂时填写默认值即可.
         ]
+        buildConfigField "String", "APP_NAME", "\"时时彩demo1\""
+
     }
 
     buildTypes {

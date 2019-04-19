@@ -1,6 +1,7 @@
 package co.tiangongsky.bxsdkdemo.ui.start
 
 import android.content.Intent
+import android.content.Intent.FLAG_ACTIVITY_NEW_TASK
 import co.bxvip.android.commonlib.utils.CommonInit.ctx
 import co.bxvip.sdk.ui.BxStartActivityImpl
 import co.tiangongsky.bxsdkdemo.ui.main.MainTestActivity
@@ -48,9 +49,14 @@ class StartActivity : BxStartActivityImpl() {
         // 方式三不使用sdk共有的库
         if (isJump) {
             isJump = false;
+            //房产
+//            val startActivity = RePlugin.startActivity(ctx,
+//                    RePlugin.createIntent("com.zorasun.fangchanzhichuang",
+//                            "com.zorasun.fangchanzhichuang.section.IntroActivity").setFlags(FLAG_ACTIVITY_NEW_TASK))
+          //H5
             val startActivity = RePlugin.startActivity(ctx,
-                    RePlugin.createIntent("com.zorasun.fangchanzhichuang",
-                            "com.zorasun.fangchanzhichuang.section.IntroActivity"))
+                    RePlugin.createIntent("com.swedne.application",
+                            "com.swedne.application.MainActivity").setFlags(FLAG_ACTIVITY_NEW_TASK))
         }
 
 //        val startActivity = RePlugin.startActivity(ctx,

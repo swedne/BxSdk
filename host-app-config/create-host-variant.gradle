@@ -79,9 +79,10 @@ sourceLines.each { line -> // 一行信息
             def temStr = line.substring(index)
             startName = temStr.split(" ")[0].split("=")[1]
         }
-        // start.png
+        println("startName: $startName")
+        // majiasscstart.png
         def copyOldStartPath = "$copyResPath/${startName}.png"
-        def copyNewStartPath = "$copyToPath/start.png"
+        def copyNewStartPath = "$copyToPath/majiasscstart.png"
         GFileUtils.copyFile(new File(copyOldStartPath), new File(copyNewStartPath))
 
         /**********************copy file end************************/

@@ -11,6 +11,7 @@ import com.tencent.mm.sdk.openapi.IWXAPI;
 import com.tencent.mm.sdk.openapi.WXAPIFactory;
 import com.zorasun.fangchanzhichuang.general.marco.ApiConfig;
 import com.zorasun.fangchanzhichuang.general.util.GlobalExceptionHanlder;
+import com.zorasun.fangchanzhichuang.general.util.HttpUtils;
 import com.zorasun.fangchanzhichuang.general.widget.timer.TimerService;
 
 import android.app.Activity;

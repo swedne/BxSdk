@@ -8,486 +8,425 @@ import com.zorasun.fangchanzhichuang.general.base.BaseEntity;
 
 public class CommunityMoreBrokerListEntity extends BaseEntity {
 
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = -2068536362710298720L;
+    /**
+     *
+     */
+    private static final long serialVersionUID = -2068536362710298720L;
 
-	@Expose
-	private Content content;
+    @Expose
+    private Content content;
 
-	/**
-	 * 
-	 * @return The content
-	 */
-	public Content getContent() {
-		return content;
-	}
+    /**
+     * @return The content
+     */
+    public Content getContent() {
+        return content;
+    }
 
-	/**
-	 * 
-	 * @param content
-	 *            The content
-	 */
-	public void setContent(Content content) {
-		this.content = content;
-	}
+    /**
+     * @param content The content
+     */
+    public void setContent(Content content) {
+        this.content = content;
+    }
 
-	public class Content {
+    public class Content {
 
-		@Expose
-		private List<BrokerList> brokerList = new ArrayList<BrokerList>();
+        @Expose
+        private List<BrokerList> brokerList = new ArrayList<BrokerList>();
 
-		/**
-		 * 
-		 * @return The brokerList
-		 */
-		public List<BrokerList> getBrokerList() {
-			return brokerList;
-		}
+        /**
+         * @return The brokerList
+         */
+        public List<BrokerList> getBrokerList() {
+            return brokerList;
+        }
 
-		/**
-		 * 
-		 * @param brokerList
-		 *            The brokerList
-		 */
-		public void setBrokerList(List<BrokerList> brokerList) {
-			this.brokerList = brokerList;
-		}
+        /**
+         * @param brokerList The brokerList
+         */
+        public void setBrokerList(List<BrokerList> brokerList) {
+            this.brokerList = brokerList;
+        }
 
-	}
+    }
 
-	public class BrokerList {
+    public class BrokerList {
 
-		@Expose
-		private BusinessService businessService;
-		@Expose
-		private Integer brokerId;
-		@Expose
-		private Integer IsExpert;
-		@Expose
-		private Object latitude;
-		@Expose
-		private String mobile;
-		@Expose
-		private String headUrl;
-		@Expose
-		private Integer businessListId;
-		@Expose
-		private String userName;
-		@Expose
-		private Object areaListName;
-		@Expose
-		private Integer uid;
-		@Expose
-		private String realName;
-		@Expose
-		private String harkBackHouse;
-		@Expose
-		private Double goodChance;
-		@Expose
-		private List<SpecialSkillList> specialSkillList = new ArrayList<SpecialSkillList>();
-		@Expose
-		private String brokerName;
-		@Expose
-		private String businessListName;
-		@Expose
-		private Object longitude;
+        @Expose
+        private BusinessService businessService;
+        @Expose
+        private Integer brokerId;
+        @Expose
+        private Integer IsExpert;
+        @Expose
+        private Object latitude;
+        @Expose
+        private String mobile;
+        @Expose
+        private String headUrl;
+        @Expose
+        private Integer businessListId;
+        @Expose
+        private String userName;
+        @Expose
+        private Object areaListName;
+        @Expose
+        private Integer uid;
+        @Expose
+        private String realName;
+        @Expose
+        private String harkBackHouse;
+        @Expose
+        private Double goodChance;
+        @Expose
+        private List<SpecialSkillList> specialSkillList = new ArrayList<SpecialSkillList>();
 
-		/**
-		 * 
-		 * @return The businessService
-		 */
-		public BusinessService getBusinessService() {
-			return businessService;
-		}
+        public String getAllSkillList() {
+            return allSkillList;
+        }
 
-		/**
-		 * 
-		 * @param businessService
-		 *            The businessService
-		 */
-		public void setBusinessService(BusinessService businessService) {
-			this.businessService = businessService;
-		}
+        public void setAllSkillList(String allSkillList) {
+            this.allSkillList = allSkillList;
+        }
 
-		/**
-		 * 
-		 * @return The brokerId
-		 */
-		public Integer getBrokerId() {
-			return brokerId;
-		}
+        @Expose
+        private String allSkillList;
+        @Expose
+        private String brokerName;
+        @Expose
+        private String businessListName;
+        @Expose
+        private Object longitude;
 
-		/**
-		 * 
-		 * @param brokerId
-		 *            The brokerId
-		 */
-		public void setBrokerId(Integer brokerId) {
-			this.brokerId = brokerId;
-		}
+        /**
+         * @return The businessService
+         */
+        public BusinessService getBusinessService() {
+            return businessService;
+        }
 
-		/**
-		 * 
-		 * @return The IsExpert
-		 */
-		public Integer getIsExpert() {
-			return IsExpert;
-		}
+        /**
+         * @param businessService The businessService
+         */
+        public void setBusinessService(BusinessService businessService) {
+            this.businessService = businessService;
+        }
 
-		/**
-		 * 
-		 * @param IsExpert
-		 *            The IsExpert
-		 */
-		public void setIsExpert(Integer IsExpert) {
-			this.IsExpert = IsExpert;
-		}
+        /**
+         * @return The brokerId
+         */
+        public Integer getBrokerId() {
+            return brokerId;
+        }
 
-		/**
-		 * 
-		 * @return The latitude
-		 */
-		public Object getLatitude() {
-			return latitude;
-		}
+        /**
+         * @param brokerId The brokerId
+         */
+        public void setBrokerId(Integer brokerId) {
+            this.brokerId = brokerId;
+        }
 
-		/**
-		 * 
-		 * @param latitude
-		 *            The latitude
-		 */
-		public void setLatitude(Object latitude) {
-			this.latitude = latitude;
-		}
+        /**
+         * @return The IsExpert
+         */
+        public Integer getIsExpert() {
+            return IsExpert;
+        }
 
-		/**
-		 * 
-		 * @return The mobile
-		 */
-		public String getMobile() {
-			return mobile;
-		}
+        /**
+         * @param IsExpert The IsExpert
+         */
+        public void setIsExpert(Integer IsExpert) {
+            this.IsExpert = IsExpert;
+        }
 
-		/**
-		 * 
-		 * @param mobile
-		 *            The mobile
-		 */
-		public void setMobile(String mobile) {
-			this.mobile = mobile;
-		}
+        /**
+         * @return The latitude
+         */
+        public Object getLatitude() {
+            return latitude;
+        }
 
-		/**
-		 * 
-		 * @return The headUrl
-		 */
-		public String getHeadUrl() {
-			return headUrl;
-		}
+        /**
+         * @param latitude The latitude
+         */
+        public void setLatitude(Object latitude) {
+            this.latitude = latitude;
+        }
 
-		/**
-		 * 
-		 * @param headUrl
-		 *            The headUrl
-		 */
-		public void setHeadUrl(String headUrl) {
-			this.headUrl = headUrl;
-		}
+        /**
+         * @return The mobile
+         */
+        public String getMobile() {
+            return mobile;
+        }
 
-		/**
-		 * 
-		 * @return The businessListId
-		 */
-		public Integer getBusinessListId() {
-			return businessListId;
-		}
+        /**
+         * @param mobile The mobile
+         */
+        public void setMobile(String mobile) {
+            this.mobile = mobile;
+        }
 
-		/**
-		 * 
-		 * @param businessListId
-		 *            The businessListId
-		 */
-		public void setBusinessListId(Integer businessListId) {
-			this.businessListId = businessListId;
-		}
+        /**
+         * @return The headUrl
+         */
+        public String getHeadUrl() {
+            return headUrl;
+        }
 
-		/**
-		 * 
-		 * @return The userName
-		 */
-		public String getUserName() {
-			return userName;
-		}
+        /**
+         * @param headUrl The headUrl
+         */
+        public void setHeadUrl(String headUrl) {
+            this.headUrl = headUrl;
+        }
 
-		/**
-		 * 
-		 * @param userName
-		 *            The userName
-		 */
-		public void setUserName(String userName) {
-			this.userName = userName;
-		}
+        /**
+         * @return The businessListId
+         */
+        public Integer getBusinessListId() {
+            return businessListId;
+        }
 
-		/**
-		 * 
-		 * @return The areaListName
-		 */
-		public Object getAreaListName() {
-			return areaListName;
-		}
+        /**
+         * @param businessListId The businessListId
+         */
+        public void setBusinessListId(Integer businessListId) {
+            this.businessListId = businessListId;
+        }
 
-		/**
-		 * 
-		 * @param areaListName
-		 *            The areaListName
-		 */
-		public void setAreaListName(Object areaListName) {
-			this.areaListName = areaListName;
-		}
+        /**
+         * @return The userName
+         */
+        public String getUserName() {
+            return userName;
+        }
 
-		/**
-		 * 
-		 * @return The uid
-		 */
-		public Integer getUid() {
-			return uid;
-		}
+        /**
+         * @param userName The userName
+         */
+        public void setUserName(String userName) {
+            this.userName = userName;
+        }
 
-		/**
-		 * 
-		 * @param uid
-		 *            The uid
-		 */
-		public void setUid(Integer uid) {
-			this.uid = uid;
-		}
+        /**
+         * @return The areaListName
+         */
+        public Object getAreaListName() {
+            return areaListName;
+        }
 
-		/**
-		 * 
-		 * @return The realName
-		 */
-		public String getRealName() {
-			return realName;
-		}
+        /**
+         * @param areaListName The areaListName
+         */
+        public void setAreaListName(Object areaListName) {
+            this.areaListName = areaListName;
+        }
 
-		/**
-		 * 
-		 * @param realName
-		 *            The realName
-		 */
-		public void setRealName(String realName) {
-			this.realName = realName;
-		}
+        /**
+         * @return The uid
+         */
+        public Integer getUid() {
+            return uid;
+        }
 
-		/**
-		 * 
-		 * @return The harkBackHouse
-		 */
-		public String getHarkBackHouse() {
-			return harkBackHouse;
-		}
+        /**
+         * @param uid The uid
+         */
+        public void setUid(Integer uid) {
+            this.uid = uid;
+        }
 
-		/**
-		 * 
-		 * @param harkBackHouse
-		 *            The harkBackHouse
-		 */
-		public void setHarkBackHouse(String harkBackHouse) {
-			this.harkBackHouse = harkBackHouse;
-		}
+        /**
+         * @return The realName
+         */
+        public String getRealName() {
+            return realName;
+        }
 
-		/**
-		 * 
-		 * @return The goodChance
-		 */
-		public Double getGoodChance() {
-			return goodChance;
-		}
+        /**
+         * @param realName The realName
+         */
+        public void setRealName(String realName) {
+            this.realName = realName;
+        }
 
-		/**
-		 * 
-		 * @param goodChance
-		 *            The goodChance
-		 */
-		public void setGoodChance(Double goodChance) {
-			this.goodChance = goodChance;
-		}
+        /**
+         * @return The harkBackHouse
+         */
+        public String getHarkBackHouse() {
+            return harkBackHouse;
+        }
 
-		/**
-		 * 
-		 * @return The specialSkillList
-		 */
-		public List<SpecialSkillList> getSpecialSkillList() {
-			return specialSkillList;
-		}
+        /**
+         * @param harkBackHouse The harkBackHouse
+         */
+        public void setHarkBackHouse(String harkBackHouse) {
+            this.harkBackHouse = harkBackHouse;
+        }
 
-		/**
-		 * 
-		 * @param specialSkillList
-		 *            The specialSkillList
-		 */
-		public void setSpecialSkillList(List<SpecialSkillList> specialSkillList) {
-			this.specialSkillList = specialSkillList;
-		}
+        /**
+         * @return The goodChance
+         */
+        public Double getGoodChance() {
+            return goodChance;
+        }
 
-		/**
-		 * 
-		 * @return The brokerName
-		 */
-		public String getBrokerName() {
-			return brokerName;
-		}
+        /**
+         * @param goodChance The goodChance
+         */
+        public void setGoodChance(Double goodChance) {
+            this.goodChance = goodChance;
+        }
 
-		/**
-		 * 
-		 * @param brokerName
-		 *            The brokerName
-		 */
-		public void setBrokerName(String brokerName) {
-			this.brokerName = brokerName;
-		}
+        /**
+         * @return The specialSkillList
+         */
+        public List<SpecialSkillList> getSpecialSkillList() {
+            return specialSkillList;
+        }
 
-		/**
-		 * 
-		 * @return The businessListName
-		 */
-		public String getBusinessListName() {
-			return businessListName;
-		}
+        /**
+         * @param specialSkillList The specialSkillList
+         */
+        public void setSpecialSkillList(List<SpecialSkillList> specialSkillList) {
+            this.specialSkillList = specialSkillList;
+        }
 
-		/**
-		 * 
-		 * @param businessListName
-		 *            The businessListName
-		 */
-		public void setBusinessListName(String businessListName) {
-			this.businessListName = businessListName;
-		}
+        /**
+         * @return The brokerName
+         */
+        public String getBrokerName() {
+            return brokerName;
+        }
 
-		/**
-		 * 
-		 * @return The longitude
-		 */
-		public Object getLongitude() {
-			return longitude;
-		}
+        /**
+         * @param brokerName The brokerName
+         */
+        public void setBrokerName(String brokerName) {
+            this.brokerName = brokerName;
+        }
 
-		/**
-		 * 
-		 * @param longitude
-		 *            The longitude
-		 */
-		public void setLongitude(Object longitude) {
-			this.longitude = longitude;
-		}
+        /**
+         * @return The businessListName
+         */
+        public String getBusinessListName() {
+            return businessListName;
+        }
 
-	}
+        /**
+         * @param businessListName The businessListName
+         */
+        public void setBusinessListName(String businessListName) {
+            this.businessListName = businessListName;
+        }
 
-	public class BusinessService {
+        /**
+         * @return The longitude
+         */
+        public Object getLongitude() {
+            return longitude;
+        }
 
-		@Expose
-		private String businessName;
-		@Expose
-		private String hardBackHouse;
+        /**
+         * @param longitude The longitude
+         */
+        public void setLongitude(Object longitude) {
+            this.longitude = longitude;
+        }
 
-		/**
-		 * 
-		 * @return The businessName
-		 */
-		public String getBusinessName() {
-			return businessName;
-		}
+    }
 
-		/**
-		 * 
-		 * @param businessName
-		 *            The businessName
-		 */
-		public void setBusinessName(String businessName) {
-			this.businessName = businessName;
-		}
+    public class BusinessService {
 
-		/**
-		 * 
-		 * @return The hardBackHouse
-		 */
-		public String getHardBackHouse() {
-			return hardBackHouse;
-		}
+        @Expose
+        private String businessName;
+        @Expose
+        private String hardBackHouse;
 
-		/**
-		 * 
-		 * @param hardBackHouse
-		 *            The hardBackHouse
-		 */
-		public void setHardBackHouse(String hardBackHouse) {
-			this.hardBackHouse = hardBackHouse;
-		}
+        /**
+         * @return The businessName
+         */
+        public String getBusinessName() {
+            return businessName;
+        }
 
-	}
+        /**
+         * @param businessName The businessName
+         */
+        public void setBusinessName(String businessName) {
+            this.businessName = businessName;
+        }
 
-	public class SpecialSkillList {
+        /**
+         * @return The hardBackHouse
+         */
+        public String getHardBackHouse() {
+            return hardBackHouse;
+        }
 
-		@Expose
-		private Integer brId;
-		@Expose
-		private String speciaName;
-		@Expose
-		private Integer speciaskillId;
+        /**
+         * @param hardBackHouse The hardBackHouse
+         */
+        public void setHardBackHouse(String hardBackHouse) {
+            this.hardBackHouse = hardBackHouse;
+        }
 
-		/**
-		 * 
-		 * @return The brId
-		 */
-		public Integer getBrId() {
-			return brId;
-		}
+    }
 
-		/**
-		 * 
-		 * @param brId
-		 *            The brId
-		 */
-		public void setBrId(Integer brId) {
-			this.brId = brId;
-		}
+    public class SpecialSkillList {
 
-		/**
-		 * 
-		 * @return The speciaName
-		 */
-		public String getSpeciaName() {
-			return speciaName;
-		}
+        @Expose
+        private Integer brId;
+        @Expose
+        private String speciaName;
+        @Expose
+        private Integer speciaskillId;
 
-		/**
-		 * 
-		 * @param speciaName
-		 *            The speciaName
-		 */
-		public void setSpeciaName(String speciaName) {
-			this.speciaName = speciaName;
-		}
+        /**
+         * @return The brId
+         */
+        public Integer getBrId() {
+            return brId;
+        }
 
-		/**
-		 * 
-		 * @return The speciaskillId
-		 */
-		public Integer getSpeciaskillId() {
-			return speciaskillId;
-		}
+        /**
+         * @param brId The brId
+         */
+        public void setBrId(Integer brId) {
+            this.brId = brId;
+        }
 
-		/**
-		 * 
-		 * @param speciaskillId
-		 *            The speciaskillId
-		 */
-		public void setSpeciaskillId(Integer speciaskillId) {
-			this.speciaskillId = speciaskillId;
-		}
+        /**
+         * @return The speciaName
+         */
+        public String getSpeciaName() {
+            return speciaName;
+        }
 
-	}
+        /**
+         * @param speciaName The speciaName
+         */
+        public void setSpeciaName(String speciaName) {
+            this.speciaName = speciaName;
+        }
+
+        /**
+         * @return The speciaskillId
+         */
+        public Integer getSpeciaskillId() {
+            return speciaskillId;
+        }
+
+        /**
+         * @param speciaskillId The speciaskillId
+         */
+        public void setSpeciaskillId(Integer speciaskillId) {
+            this.speciaskillId = speciaskillId;
+        }
+
+    }
 
 }
